@@ -4,8 +4,8 @@ import './NavbarStyles.css';
 function Navbar () {
   return (
     <nav>
-      <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
+        <img src="../img/logo.png" alt="E-logo" width="150"/>
+        <Link to='/'>Home</Link>
         <Link to='/projects'>Projects</Link>
         <Link to='/contact'>Contact</Link>
     </nav>

@@ -1,15 +1,38 @@
-.content {
-    margin-top: 5px;
-    margin-bottom: 5px;
+#wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: #f3f3f2;
     color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
     text-align: center;
+    /* border: solid 2px #f42828; */
+}
+.landingBox {
+    background-color: #E0E1DD;
+    width: 40%;
+    height: 50vh;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+}
+
+.landingHeader {
+    font-size: 4rem;
+    color: #e26d5c;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.landingSubheader {
+    font-size: 2rem;
+    color: #415A77;
+    margin-top: 10px;
+
+}
+
+.landingText {
+    font-size: 1.5rem;
+    color: #415A77;
 }
