@@ -1,10 +1,9 @@
-import React from 'react'
 import './LandingPageStyles.css'
 
 const LandingPage = () => {
   return (
-    <div>
-      <p className='content'>Some content goes here</p>
+    <div className='content'>
+      <p>Some content goes here</p>
     </div>
   )
 }

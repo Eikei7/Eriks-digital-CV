@@ -1,0 +1,21 @@
+.projectsBox {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    /* border: 1px solid #f42828; */
+}
+
+
+.repoText {
+    color: black;
+    margin: 2px;
+}
+
+h2 {
+    color: black;
+}
