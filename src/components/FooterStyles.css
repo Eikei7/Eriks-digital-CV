@@ -1,18 +1,19 @@
-.footerText {
-    font-size: 2.5em;
-    color: #3b7efb;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
 .footerBox {
     display: flex;
     justify-content: center;
     /* align-items: center; */
     background-color: #f3f3f2;
-    color: #333;
+    color: var(--grey);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     /* border: solid 1px #f42828; */
 }
+#quote {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+#author {
+    font-style: italic;
+    margin-bottom: 20px;
+  }

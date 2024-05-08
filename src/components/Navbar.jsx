@@ -1,13 +1,27 @@
 import { Link } from 'react-router-dom';
 import './NavbarStyles.css';
+import Icon from '@mdi/react';
+import { mdiBriefcaseOutline, mdiHomeVariantOutline, mdiEmailOutline } from '@mdi/js';
 
 function Navbar () {
   return (
     <nav>
-        <img src="../img/logo.png" alt="E-logo" width="150"/>
-        <Link to='/'>Home</Link>
-        <Link to='/projects'>Projects</Link>
-        <Link to='/contact'>Contact</Link>
+        <img src="../img/e-k-logo.png" alt="EK-logo" width="100"/>
+        <Link to='/'>
+        <button className="button" role="button">
+        <Icon path={mdiHomeVariantOutline} size={1.7} />
+        Home</button>
+        </Link>
+        <Link to='/projects'>
+        <button className="button" role="button">
+        <Icon path={mdiBriefcaseOutline} size={1.7} />
+        Projects</button>
+        </Link>        
+        <Link to='/contact'>
+        <button className="button" role="button">
+        <Icon path={mdiEmailOutline} size={1.7} />
+        Contact</button>
+        </Link>
     </nav>
   )
 }

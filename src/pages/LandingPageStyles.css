@@ -1,9 +1,9 @@
 #wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     background-color: #f3f3f2;
     color: #333;
@@ -20,19 +20,20 @@
 
 .landingHeader {
     font-size: 4rem;
-    color: #e26d5c;
+    color: var(--orange);
     margin-bottom: 5px;
     margin-top: 15px;
 }
 
 .landingSubheader {
     font-size: 2rem;
-    color: #415A77;
+    color: var(--steelblue);
     margin-top: 10px;
 
 }
 
 .landingText {
-    font-size: 1.5rem;
-    color: #415A77;
+    font-size: 1.2rem;
+    color: var(--steelblue);
+    padding: 0 50px 0 50px;
 }
