@@ -6,7 +6,7 @@ import DarkModeButton from './DarkModeButton';
 
 function Navbar () {
   return (
-    <div className='nav'>
+    <nav>
         <img src="../img/e-k-logo.png" alt="EK-logo" width="100"/>
         <Link to='/'>
         <button className="button" role="button">
@@ -24,7 +24,7 @@ function Navbar () {
         Contact</button>
         </Link>
         <DarkModeButton />
-    </div>
+    </nav>
   )
 }
 

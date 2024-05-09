@@ -32,6 +32,5 @@ const quotes = [
     document.getElementById('author').innerText = "- " + randomQuote.author;
   }
   
-  // Export the generateQuote function
   export { generateQuote };
   

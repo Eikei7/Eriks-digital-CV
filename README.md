@@ -11,7 +11,7 @@ The Home view provides visitors with a brief introduction to who I am. It encaps
 The Projects view dynamically fetches and displays my latest five projects directly from my GitHub repository using the GitHub API. Each project is presented with relevant details and links for further exploration.
 
 ### Contact
-The Contact view serves as a direct communication channel between visitors and myself. It features a user-friendly contact form where users can input their name, email, and message. Currently the form isn't functional, meaning it won't send me an email upon submission, it only logs their name, email address and message to the console.
+The Contact view serves as a direct communication channel between visitors and myself. It features a user-friendly contact form where users can input their name, email address, and message. Currently the form isn't functional, meaning it won't send an email upon submission, it only logs the submitted name, email address and message to the console.
 
 ## Technology Stack
 - **Frontend Framework:** Utilizes a modern frontend framework (React) for building a responsive and interactive user interface.

@@ -8,15 +8,14 @@ function FormComponent() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({
-      ...formData,
+  const handleInputChange = ({ target: { name, value } }) => {
+    setFormData(prevFormData => ({
+      ...prevFormData,
       [name]: value
-    });
+    }));
   };
 
-  const handleSubmit = (event) => {
+  const handleFormSubmit = (event) => {
     event.preventDefault();
     console.log(formData); // For demonstration, logging form data to console
     setSubmitted(true);
@@ -29,7 +28,7 @@ function FormComponent() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleFormSubmit}>
         <input 
           name="name" 
           type="text" 
@@ -58,12 +57,12 @@ function FormComponent() {
           value="SUBMIT" 
         />
       </form>
-      {submitted && (
-        <div>
+      {submitted ? (
+        <>
           <h2>Form Submitted!</h2>
           <p className='landingText'>Thank you for your query.</p>
-        </div>
-      )}
+        </>
+      ) : null}
     </div>
   );
 }
