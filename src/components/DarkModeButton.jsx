@@ -21,7 +21,7 @@ const switchDarkMode = () => {
 };
 useEffect(() => {
   //changing color of body with darkmode in useEffect
-  document.body.style.backgroundImage = isdarkMode ? "url('./img/pattern1.png)" : "url('./img/pattern3.png')";
+  document.body.style.backgroundImage = isdarkMode ? "url('./img/pattern1.png)" : "url('./img/pattern2.png')";
 }, [isdarkMode]);
   return (
     <div
@@ -37,8 +37,8 @@ useEffect(() => {
       checked={isdarkMode}
     />
     <label htmlFor="checkbox" className="label">
-      <TbNumber2 color="white" />
       <TbNumber1 color="white" />
+      <TbNumber2 color="white" />
       <div className="ball"></div>
     </label>
   </div>

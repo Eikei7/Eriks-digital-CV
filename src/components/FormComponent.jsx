@@ -20,6 +20,11 @@ function FormComponent() {
     event.preventDefault();
     console.log(formData); // For demonstration, logging form data to console
     setSubmitted(true);
+    setFormData({
+      name: '',
+      email: '',
+      text: ''
+    });
   };
 
   return (
