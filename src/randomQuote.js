@@ -18,6 +18,10 @@ const quotes = [
     {
       quote: "The way to get started is to quit talking and begin doing.",
       author: "Walt Disney"
+    },
+    {
+      quote: "Life is either a daring adventure or nothing at all.",
+      author: "Helen Keller"
     }
   ];
   

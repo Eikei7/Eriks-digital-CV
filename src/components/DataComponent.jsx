@@ -24,7 +24,7 @@ const DataComponent = () => {
       {error && <p>Error: {error.message}</p>}
       {data && (
         <div className='repoList'>
-          <h2 className='landingSubheader'>Here are some of my latest GitHub projects:</h2>
+          <h2 className='landingSubheader'>Below are some of my latest GitHub projects:</h2>
             <ul>
                 {data.map((repo) => (
                     <li key={repo.id}>

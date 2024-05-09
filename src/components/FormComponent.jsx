@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function FormComponent() {
   const [formData, setFormData] = useState({
@@ -18,7 +18,6 @@ function FormComponent() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // You can perform form submission logic here, like sending data to a server
     console.log(formData); // For demonstration, logging form data to console
     setSubmitted(true);
   };
@@ -57,7 +56,7 @@ function FormComponent() {
       {submitted && (
         <div>
           <h2>Form Submitted!</h2>
-          <p>Thank you for your query.</p>
+          <p className='landingText'>Thank you for your query.</p>
         </div>
       )}
     </div>

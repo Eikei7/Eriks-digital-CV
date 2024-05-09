@@ -9,15 +9,11 @@
     padding: 0;
     width: 100%;
     height: 80vh;
-    /* border: 1px solid #f42828; */
 }
-
-
 .repoText {
     color: black;
     margin: 2px;
 }
-
 h2 {
     color: #415A77;
 }
