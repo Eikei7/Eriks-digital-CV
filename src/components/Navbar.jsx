@@ -7,7 +7,7 @@ import DarkModeButton from './DarkModeButton';
 function Navbar () {
   return (
     <nav>
-        <img src="../img/e-k-logo.png" alt="EK-logo" width="100"/>
+        <img src="./img/e-k-logo.png" alt="EK-logo" width="100"/>
         <Link to='/'>
         <button className="button" role="button">
         <Icon path={mdiHomeVariantOutline} size={1.4} />

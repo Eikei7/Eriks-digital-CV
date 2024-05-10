@@ -5,11 +5,11 @@ import { mdiMicrosoftWindows, mdiReact, mdiLanguageJavascript, mdiLanguageCss3, 
 const LandingPage = () => {
   return (
     <div id='wrapper'>
-        <img src='../img/erik_headshot.png' alt='Erik Karlsson' width="400"/>
+        <img src="./img/erik_headshot.png" alt='Erik Karlsson' width="400"/>
         <div className='landingBox'>
           <h1 className='landingHeader'>Erik Karlsson</h1>
           <h2 className='landingSubheader'>Frontend Developer Student</h2>
-          <p className='landingText'>I create web apps and I tinker with electronics.<br /><br />I feel confident in using the following web techniques and systems:</p>
+          <p className='landingText'>I create web apps and I tinker with electronics.<br /><br />I feel confident in using the following web technologies and systems:</p>
           <div className="tooltip">
           <Icon path={mdiLanguageHtml5} size={2.7} color="var(--steelblue)" />
           <span class="tooltiptext">HTML5</span>

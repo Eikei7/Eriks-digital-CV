@@ -14,7 +14,7 @@ The Projects view dynamically fetches and displays my latest five projects direc
 The Contact view serves as a direct communication channel between visitors and myself. It features a user-friendly contact form where users can input their name, email address, and message. Currently the form isn't functional, meaning it won't send an email upon submission, it only logs the submitted name, email address and message to the console.
 
 ## Technology Stack
-- **Frontend Framework:** Utilizes a modern frontend framework (React) for building a responsive and interactive user interface.
+- **Frontend Framework:** Utilizes a modern frontend framework (React) for building a responsive and interactive user interface. It also includes a button for switching between two background images, which utilizes React Redux.
 - **API Integration:** Integrates with the GitHub API to retrieve and display project data dynamically.
 - **Material Design Icons:** Enhances the user experience by incorporating Material Design Icons, providing intuitive visual cues and enhancing the aesthetic appeal.
 
