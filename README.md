@@ -26,6 +26,6 @@ The Contact view serves as a direct communication channel between visitors and m
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
-3. Install necessary dependencies using npm install.
+3. Install necessary dependencies using "npm install" and "npm install @mdi/react".
 4. Start the development server using npm run dev.
 5. Access the application in your web browser at the specified localhost address.
