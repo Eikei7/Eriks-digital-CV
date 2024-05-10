@@ -22,3 +22,10 @@ The Contact view serves as a direct communication channel between visitors and m
 - **User-Centric Design:** Prioritizes user experience and engagement by adopting a user-centric design approach.
 - **Consistency:** Maintains visual and functional consistency across all views and components, contributing to a cohesive and intuitive user experience.
  
+### To run the project locally, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install necessary dependencies using npm install.
+4. Start the development server using npm run dev.
+5. Access the application in your web browser at the specified localhost address.
