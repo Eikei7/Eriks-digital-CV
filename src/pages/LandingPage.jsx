@@ -2,22 +2,15 @@ import React, { useEffect } from 'react';
 import './LandingPageStyles.css'
 import Icon from '@mdi/react';
 import { mdiMicrosoftWindows, mdiReact, mdiLanguageJavascript, mdiLanguageCss3, mdiHomeAssistant, mdiLanguageHtml5 } from '@mdi/js';
-import anime from 'animejs/lib/anime.es.js';
 
 const LandingPage = () => {
-   useEffect(() => {
-    anime({
-    targets: ".loader",
-    rotate: "360deg", // Roterar 360 grader
-    duration: 1000, // Animationens längd i millisekunder
-    loop: true, // Loopa animationen
-    easing: "easeInOutQuad",
-    });
-  }, []);
+
   return (
     <div id='wrapper'>
-      <div className="loader"></div>
+      <div className="container">
+      <div className="ring"></div>
         <img src="./img/erik_headshot.png" alt='Erik Karlsson' width="400"/>
+        </div>
         <div className='landingBox'>
           <h1 className='landingHeader'>Erik Karlsson</h1>
           <h2 className='landingSubheader'>Frontend Developer</h2>
