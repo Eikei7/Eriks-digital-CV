@@ -12,7 +12,8 @@
 .landingBox {
     background-color: #E0E1DD;
     width: 40%;
-    height: 50vh;
+    padding: 20px;
+    max-height: 700px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
     border-radius: 5%;
 }
@@ -20,20 +21,22 @@
 .landingHeader {
     font-size: 4rem;
     color: var(--orange);
-    margin-bottom: 5px;
-    margin-top: 15px;
+    margin: 0px;
+    line-height: normal;
 }
 
 .landingSubheader {
     font-size: 2rem;
     color: var(--steelblue);
     margin-top: 10px;
+    line-height: normal;
 }
 
 .landingText {
     font-size: 1.2rem;
     color: var(--steelblue);
     padding: 0 50px 0 50px;
+    line-height: normal;
 }
 .svg-icon {
     width: 5em;

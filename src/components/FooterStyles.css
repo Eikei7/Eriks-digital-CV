@@ -1,6 +1,7 @@
 .footerBox {
     display: flex;
     justify-content: center;
+    padding: 20px;
     background-color: var(--almostwhite);
     color: var(--grey);
     font-size: 1rem;
