@@ -35,7 +35,10 @@
     color: var(--steelblue);
     padding: 0 50px 0 50px;
 }
-
+.svg-icon {
+    width: 5em;
+    height: auto;
+}
 .tooltip {
     position: relative;
     display: inline-block;
@@ -58,4 +61,28 @@
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .landingBox {
+        width: 80%;
+        height: 40vh;
+    }
+    .landingHeader {
+        font-size: 3rem;
+    }
+    .landingSubheader {
+        font-size: 1.5rem;
+    }
+    .landingText {
+        font-size: 1rem;
+    }
+    .svg-icon {
+        width: 3em;
+        height: auto;
+      }
 }
