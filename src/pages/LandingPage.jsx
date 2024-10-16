@@ -9,7 +9,7 @@ const LandingPage = () => {
     <div id='wrapper'>
       <div className="container">
       <div className="ring"></div>
-        <img src="./img/erik_headshot.png" alt='Erik Karlsson' width="400"/>
+        <img src="./img/erik_headshot.png" alt='Erik Karlsson' width="400" height="auto"/>
         </div>
         <div className='landingBox'>
           <h1 className='landingHeader'>Erik Karlsson</h1>
