@@ -21,7 +21,7 @@ useEffect(() => {
 
   const nav = document.querySelector('nav');
   if (nav) {
-    nav.style.backgroundColor = isdarkMode ? "#333" : "var(--almostwhite)";
+    nav.style.backgroundColor = isdarkMode ? "var(--darkerwhite)" : "var(--almostwhite)";
     nav.style.boxShadow = isdarkMode ? "0px 5px 20px rgba(0, 0, 0, 0.8)" : "0px 5px 20px rgba(0, 0, 0, 0.5)";
   }
 
