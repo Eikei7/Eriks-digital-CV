@@ -16,9 +16,22 @@ const switchDarkMode = () => {
     : dispatch(handledarkMode(true));
 };
 useEffect(() => {
-
   document.body.style.backgroundImage = isdarkMode ? "url('./img/pattern1.png')" : "url('./img/pattern2.png')";
+  document.body.style.color = isdarkMode ? "#f0f0f0" : "#2c2c2c";
+
+  const nav = document.querySelector('nav');
+  if (nav) {
+    nav.style.backgroundColor = isdarkMode ? "#333" : "var(--almostwhite)";
+    nav.style.boxShadow = isdarkMode ? "0px 5px 20px rgba(0, 0, 0, 0.8)" : "0px 5px 20px rgba(0, 0, 0, 0.5)";
+  }
+
+  const buttons = document.querySelectorAll('.button');
+  buttons.forEach(button => {
+    button.style.backgroundColor = isdarkMode ? "#444" : "#1899D6";
+    button.style.color = isdarkMode ? "#f0f0f0" : "#FFFFFF";
+  });
 }, [isdarkMode]);
+
   return (
     <div
     id="darkmode"
