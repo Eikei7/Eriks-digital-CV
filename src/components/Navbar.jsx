@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './NavbarStyles.css';
 import Icon from '@mdi/react';
-import { mdiBriefcaseOutline, mdiHomeVariantOutline, mdiEmailOutline } from '@mdi/js';
+import { mdiBriefcaseOutline, mdiHomeVariantOutline, mdiEmailOutline, mdiAccountTieOutline } from '@mdi/js';
 import DarkModeButton from './DarkModeButton';
 
 function Navbar () {
@@ -17,7 +17,12 @@ function Navbar () {
         <button className="button" role="button">
         <Icon path={mdiBriefcaseOutline} size={1.4} />
         Projects</button>
-        </Link>        
+        </Link>
+        <Link to='/aboutme'>
+        <button className="button" role="button">
+        <Icon path={mdiAccountTieOutline} size={1.4} />
+        About me</button>
+        </Link>          
         <Link to='/contact'>
         <button className="button" role="button">
         <Icon path={mdiEmailOutline} size={1.4} />
