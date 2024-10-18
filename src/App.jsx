@@ -7,6 +7,7 @@ import Contact from './pages/Contact'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Provider } from "react-redux";
 import store from './store/store'
+import AboutMe from './pages/AboutMe'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/aboutme' element={<AboutMe />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       <Footer />
