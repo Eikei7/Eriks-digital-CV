@@ -1,19 +1,47 @@
 .projectsBox {
     background-color: #f3f3f2;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: left;
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    height: 80vh;
+    height: auto;
+}
+.projectsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 26em;
+    max-width: 300px;
+    border: solid 2px #415A77;
 }
 .repoText {
     color: black;
     margin: 2px;
 }
-h2 {
+h1, h2 {
     color: #415A77;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
 }
