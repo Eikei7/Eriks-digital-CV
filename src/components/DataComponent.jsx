@@ -29,8 +29,9 @@ const DataComponent = () => {
     <div>
       {error && <p>Error: {error}</p>}
       {data && (
-        <div className='repoList'>
+        <>
           <h2 className='landingSubheader'>Below are some of my latest GitHub projects:</h2>
+          <div className='repoList'>
           <ul>
             {data.map((repo) => (
               <li key={repo.id}>
@@ -41,6 +42,7 @@ const DataComponent = () => {
             ))}
           </ul>
         </div>
+        </>
       )}
     </div>
   );

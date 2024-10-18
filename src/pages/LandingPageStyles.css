@@ -60,8 +60,10 @@
 .landingSubheader {
     font-size: 2rem;
     color: var(--steelblue);
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     line-height: normal;
+    text-align: center;
 }
 
 .landingText {
