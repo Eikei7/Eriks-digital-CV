@@ -1,5 +1,33 @@
+#aboutmeWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-color: #f3f3f2;
+    color: #333;
+    text-align: center;
+}
+
 .aboutmeHeader {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: var(--main-color);
+}
+.aboutmeBox {
+    background-color: #E0E1DD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    height: 26em;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }

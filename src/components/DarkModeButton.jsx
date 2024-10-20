@@ -21,14 +21,14 @@ useEffect(() => {
 
   const nav = document.querySelector('nav');
   if (nav) {
-    nav.style.backgroundColor = isdarkMode ? "var(--darkerwhite)" : "var(--almostwhite)";
+    nav.style.backgroundColor = isdarkMode ? "var(--almostwhite)" : "var(--almostwhite)";
     nav.style.boxShadow = isdarkMode ? "0px 5px 20px rgba(0, 0, 0, 0.8)" : "0px 5px 20px rgba(0, 0, 0, 0.5)";
   }
 
   const buttons = document.querySelectorAll('.button');
   buttons.forEach(button => {
-    button.style.backgroundColor = isdarkMode ? "#444" : "#1899D6";
-    button.style.color = isdarkMode ? "#f0f0f0" : "#FFFFFF";
+    button.style.backgroundColor = isdarkMode ? "#1899D6" : "#1899D6";
+    button.style.color = isdarkMode ? "#fff" : "#fff";
   });
 }, [isdarkMode]);
 

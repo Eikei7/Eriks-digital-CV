@@ -73,7 +73,6 @@ h2 {
     font-size: 1.7em;
     margin: 0;
     color: var(--orange);
-
 }
 
 .modal-overlay {
@@ -90,7 +89,6 @@ h2 {
     overflow: hidden;
   }
   
-
   .modal-content {
     position: relative;
     background-color: white;
@@ -121,5 +119,11 @@ h2 {
   
   .project-image {
     cursor: pointer;
+  }
+
+  .description {
+    font-size: 1em;
+    margin: 0;
+    color: #333;
   }
   

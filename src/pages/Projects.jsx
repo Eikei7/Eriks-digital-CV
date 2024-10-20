@@ -32,7 +32,7 @@ const Projects = () => {
             onClick={() => openModal("img/solaris.png")} 
             className="project-image"
           />
-          <p>A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets.</p>
+          <p className='description'>A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets.</p>
         </div>
 
         <div className='project'>
@@ -46,7 +46,7 @@ const Projects = () => {
             onClick={() => openModal("img/beepbox.png")} 
             className="project-image"
           />
-          <p>A Beepbox music portfolio made entirely from HTML and CSS styling. It features a widget for playing both my cover and the original song in Spotify.</p>
+          <p className='description'>A Beepbox music portfolio made entirely from HTML and CSS styling. It features a widget component for playing both my cover and the original song in Spotify.</p>
         </div>
         
       </div>
