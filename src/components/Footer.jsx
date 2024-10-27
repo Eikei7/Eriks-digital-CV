@@ -1,6 +1,5 @@
 import React from 'react'
 import './FooterStyles.css'
-import RandomQuoteComponent from './RandomQuoteComponent'
 
 const Footer = () => {
   return (
