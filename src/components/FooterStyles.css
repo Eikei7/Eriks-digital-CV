@@ -1,15 +1,28 @@
 .footerBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding: 20px;
     background-color: var(--almostwhite);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
     color: var(--grey);
     font-size: 1rem;
     text-align: left;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 2px solid var(--grey);
+}
+.footerSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.footerSocial img {
+    width: 40px;
+    height: 40px;
 }
