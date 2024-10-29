@@ -4,8 +4,10 @@ import FormComponent from '../components/FormComponent'
 const Contact = () => {
   return (
     <div id="wrapperContact">
-      <p className='landingText'>Feel free to contact me using the form below:</p><br />
+      <div className='landingBox'>
+      <p className='landingText'>If you'd like to get in touch with me, send me a message using the form below and we'll take it from there!</p><br />
       <FormComponent />
+      </div>
     </div>
   )
 }
