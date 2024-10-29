@@ -10,6 +10,7 @@ const AboutMe = () => {
       <p> Yes, you got it, 1985.</p>
       <p>I chose these three events from my birth year for a reason. The reason being that, apart from growing up using Windows, I also love retro video games and music. Music is something I simply can't
         go without. I could talk for days about The Beatles' albums or John Mayer's guitar playing, but that's not what this section was intended for.</p>
+        <p>(More text to come)</p>
     </div>
   </div>
   )
