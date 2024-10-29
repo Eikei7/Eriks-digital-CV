@@ -45,7 +45,7 @@
     background-color: #E0E1DD;
     width: 40%;
     padding: 20px;
-    max-height: 700px;
+    height: auto;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
     border-radius: 5%;
 }
@@ -99,7 +99,24 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
-
+@media (max-width: 1000px) {
+    .svg-icon {
+        width: 4em;
+        height: auto;
+      }
+    .landingHeader {
+        font-size: 3rem;
+    }
+    .container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+    .ring {
+        width: 300px;
+        height: 300px;
+    }
+}
 @media (max-width: 768px) {
     #wrapper {
         flex-direction: column-reverse;
@@ -107,7 +124,7 @@
     }
     .landingBox {
         width: 80%;
-        height: 40vh;
+        height: auto;
     }
     .landingHeader {
         font-size: 3rem;
@@ -116,10 +133,10 @@
         font-size: 1.5rem;
     }
     .landingText {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .svg-icon {
-        width: 3em;
+        width: 4em;
         height: auto;
       }
 }
