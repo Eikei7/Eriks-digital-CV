@@ -18,7 +18,7 @@ form {
     font-size: 18px;
     border-radius: 5px;
     line-height: 22px;
-    background-color: transparent;
+    background-color: var(--almostwhite);
     border:2px solid #415A77;
     transition: all 0.3s;
     padding: 13px;
@@ -51,3 +51,8 @@ form {
     font-weight:700;
   }
   [type="submit"]:hover { background:#5d81aa; }
+
+  .emoji {
+    font-size: 3rem;
+    margin: 0;
+  }
