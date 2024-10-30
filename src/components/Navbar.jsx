@@ -11,22 +11,23 @@ function Navbar () {
         <Link to='/'>
         <button className="button" role="button">
         <Icon path={mdiHomeVariantOutline} size={1.4} />
-        Home</button>
+        <span className="button-text">Home</span>
+        </button>
         </Link>
         <Link to='/projects'>
         <button className="button" role="button">
         <Icon path={mdiBriefcaseOutline} size={1.4} />
-        Projects</button>
+        <span className="button-text">Projects</span></button>
         </Link>
         <Link to='/aboutme'>
         <button className="button" role="button">
         <Icon path={mdiAccountTieOutline} size={1.4} />
-        About me</button>
+        <span className="button-text">About me</span></button>
         </Link>          
         <Link to='/contact'>
         <button className="button" role="button">
         <Icon path={mdiEmailOutline} size={1.4} />
-        Contact</button>
+        <span className="button-text">Contact</span></button>
         </Link>
         <DarkModeButton />
     </nav>

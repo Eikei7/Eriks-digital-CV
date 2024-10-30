@@ -1,3 +1,4 @@
+/* Standardnav för större skärmar */
 nav {
   padding: 3vh 3vw;
   display: flex;
@@ -18,7 +19,7 @@ nav {
   color: #FFFFFF;
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.1rem;
@@ -66,43 +67,14 @@ nav {
   border-width: 4px 0 0;
   background: none;
 }
-@media (max-width: 768px) {
-  nav {
-    padding: 3vh 3vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--almostwhite);
-    text-align: center;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 10px 10px 0 0;
+
+/* Endast ikoner på mindre skärmar */
+@media (max-width: 1000px) {
+  .button-text {
+    display: none; /* Dölj texten i knapparna */
   }
+  
   .button {
-    background-color: #1899D6;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    letter-spacing: .8px;
-    line-height: 20px;
-    margin: 0;
-    outline: none;
-    overflow: visible;
-    padding: 5px 10px;
-    text-align: center;
-    transform: translateZ(0);
-    transition: filter .2s;
-    vertical-align: middle;
-    white-space: nowrap;
-    width: 100%;
-    position: relative;
+    padding: 10px; /* Justera padding för att passa ikonerna bättre */
   }
 }
