@@ -45,3 +45,46 @@
 #darkmode .checkbox:checked + .label .ball{
   transform: translateX(24px);
 }
+
+body.dark-mode {
+  background-image: url('./img/pattern1.png');
+  color: #f0f0f0;
+  transition: all 0.5s ease-in-out;
+}
+
+body.dark-mode nav {
+  background-color: #2F3E46;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode #wrapper, body.dark-mode .projectsBox, body.dark-mode #aboutmeWrapper, body.dark-mode #wrapperContact {
+  background-color: #2F3E46;
+}
+
+body.dark-mode .footerBox {
+  background-color: #2F3E46;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .landingBox, body.dark-mode .aboutmeBox, body.dark-mode .contactBox {
+  background-color: #354F52;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  color: #CAD2C5;
+}
+
+body.dark-mode .landingHeader {
+  color: #CAD2C5; 
+}
+
+body.dark-mode .landingSubheader {
+  color: #CAD2C5;
+}
+body.dark-mode .landingText {
+  color: #CAD2C5;
+}
+
+body.dark-mode .button {
+  background-color: #1899D6;
+  color: #fff;
+}
+
