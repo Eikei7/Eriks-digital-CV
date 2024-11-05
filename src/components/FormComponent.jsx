@@ -77,7 +77,7 @@ function FormComponent() {
       </form>
       {submitted ? (
         <>
-          <h2>Form Submitted!</h2>
+          <h2>Email sent!</h2>
           <p className="landingText">Thank you for your query.</p>
         </>
       ) : null}
