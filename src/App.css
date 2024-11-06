@@ -66,21 +66,14 @@ body.dark-mode .footerBox {
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.8);
 }
 
-body.dark-mode .landingBox, body.dark-mode .aboutmeBox, body.dark-mode .contactBox {
+body.dark-mode .landingBox, body.dark-mode .aboutmeBox, body.dark-mode .contactBox, body.dark-mode .project, body.dark-mode .repoList {
   background-color: #354F52;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   color: #CAD2C5;
 }
 
-body.dark-mode .landingHeader {
+body.dark-mode .landingHeader, body.dark-mode .landingSubheader, body.dark-mode .landingText, body.dark-mode .repoText, body.dark-mode .description {
   color: #CAD2C5; 
-}
-
-body.dark-mode .landingSubheader {
-  color: #CAD2C5;
-}
-body.dark-mode .landingText {
-  color: #CAD2C5;
 }
 
 body.dark-mode .button {
