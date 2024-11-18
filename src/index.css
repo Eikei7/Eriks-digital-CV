@@ -3,7 +3,7 @@
 :root {
   font-family: 'Fira Sans', sans-serif;
   line-height: 1.5;
-  background: url("./assets/pattern1.png");
+  background: url("/img/pattern1.png");
   background-repeat: repeat;
   height: 100%;
   --orange: #e26d5c;
@@ -18,7 +18,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url('./img/pattern2.png');
+  background-image: url('/img/pattern2.png');
   color: #f0f0f0;
   transition: all 0.5s ease-in-out;
 }

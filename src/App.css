@@ -47,7 +47,7 @@
 }
 
 body.dark-mode {
-  background-image: url('./img/pattern1.png');
+  background-image: url('/img/pattern1.png');
   color: #f0f0f0;
   transition: all 0.5s ease-in-out;
 }
