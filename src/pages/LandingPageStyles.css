@@ -1,15 +1,14 @@
-/* LandingPageStyles.css - Modern and consistent with site design */
 
 /* Landing container */
 .landing-container {
     background-color: var(--almostwhite, #f3f3f2);
     width: 100%;
     margin: 0 auto;
-    min-height: 80vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1rem;
+    /* padding: 1rem 1rem; */
     box-sizing: border-box;
   }
   
@@ -201,6 +200,7 @@
   @media (max-width: 1024px) {
     .landing-content {
       gap: 2rem;
+      padding: 0 3rem;
     }
     
     .profile-container {
@@ -229,6 +229,7 @@
     .landing-content {
       flex-direction: column;
       gap: 2.5rem;
+      padding: 0 1rem;
     }
     
     .profile-section,
@@ -284,10 +285,14 @@
   }
   
   @media (max-width: 400px) {
-    .profile-container {
+    #root {
+        width: 90%;
+      }
+
+    /* .profile-container {
       width: 200px;
       height: 200px;
-    }
+    } */
     
     .skills-grid {
       grid-template-columns: repeat(2, 1fr);

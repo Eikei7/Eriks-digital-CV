@@ -7,7 +7,6 @@
     align-items: center;
     padding: 1.5rem 1rem;
     width: 100%;
-    /* box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.08); */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-sizing: border-box;
@@ -18,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Matchar andra containrar */
+    max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -55,13 +54,12 @@
   }
   
   .footerSocial img:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.5);
   }
   
   /* Dark mode styles */
   body.dark-mode .footerBox {
     background-color: #2F3E46;
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
   }
   
   body.dark-mode .footerCopyright {
@@ -69,11 +67,11 @@
   }
   
   body.dark-mode .footerSocial img {
-    filter: brightness(0.9);
+    filter: brightness(1.2);
   }
   
   body.dark-mode .footerSocial img:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.7);
   }
   
   /* Responsive styles */

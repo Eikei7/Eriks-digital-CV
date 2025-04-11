@@ -14,7 +14,7 @@ const DataComponent = () => {
         setLoading(true);
         const responseData = await fetchData();
         const sortedData = responseData.sort((a, b) => b.updated_at.localeCompare(a.updated_at));
-        setData(sortedData.slice(0, 5));
+        setData(sortedData.slice(0, 6));
         setError(null);
       } catch (error) {
         setError("Failed to fetch projects. Please try again later.");
@@ -49,7 +49,7 @@ const DataComponent = () => {
 
   return (
     <div className="github-container">
-      <h2 className="github-title">My latest GitHub projects</h2>
+      <h2 className="github-title">Latest GitHub projects</h2>
       
       <div className="repo-grid">
         {data?.map((repo) => (

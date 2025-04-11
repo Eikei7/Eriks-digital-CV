@@ -4,7 +4,7 @@ import FormComponent from '../components/FormComponent';
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h2 className="contact-title">Get in Touch</h2>
+      <h2 className="contact-title">Get in touch</h2>
       
       <div className="contact-content">
         <div className="contact-intro">
