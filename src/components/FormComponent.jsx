@@ -2,20 +2,20 @@ import { useState, useEffect } from 'react';
 
 function FormComponent() {
   const [formData, setFormData] = useState({
-    user_name: '',  // matchar "user_name" i din mall
-    user_email: '', // matchar "user_email" i din mall
-    message: ''     // matchar "message" i din mall
+    user_name: '',
+    user_email: '',
+    message: ''
   });
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    // Dynamiskt laddar EmailJS-skript från CDN
+
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
     script.async = true;
     script.onload = () => {
-      // Initierar EmailJS med public key
-      emailjs.init('7KdWdO7g89mTeCswg');  // Ersätt med din EmailJS Public Key
+
+      emailjs.init('7KdWdO7g89mTeCswg');
     };
     document.body.appendChild(script);
   }, []);
@@ -30,7 +30,7 @@ function FormComponent() {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    // Skickar formuläret med emailjs.sendForm
+
     emailjs.sendForm('service_hswxud5', 'template_2zg5dhj', event.target)
       .then(() => {
         console.log('SUCCESS!');
@@ -51,7 +51,7 @@ function FormComponent() {
     <div>
       <form id="contact-form" onSubmit={handleFormSubmit}>
         <input
-          name="user_name"  // Motsvarar "user_name" i EmailJS-mallen
+          name="user_name"
           type="text"
           className="feedback-input"
           placeholder="Your Name"
@@ -59,7 +59,7 @@ function FormComponent() {
           onChange={handleInputChange}
         />
         <input
-          name="user_email"  // Motsvarar "user_email" i EmailJS-mallen
+          name="user_email"
           type="email"
           className="feedback-input"
           placeholder="Your Email"
@@ -67,7 +67,7 @@ function FormComponent() {
           onChange={handleInputChange}
         />
         <textarea
-          name="message"  // Motsvarar "message" i EmailJS-mallen
+          name="message"
           className="feedback-input"
           placeholder="Your Message"
           value={formData.message}
