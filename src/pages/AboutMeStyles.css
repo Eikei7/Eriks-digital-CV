@@ -1,44 +1,159 @@
-#aboutmeWrapper {
+/* AboutMeStyles.css - Moderniserad och konsekvent med övrig layout */
+
+.aboutme-container {
+    background-color: var(--almostwhite, #f3f3f2);
+    padding: 3rem 1rem;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  /* About me heading */
+  .aboutme-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--steelblue, #415A77);
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .aboutme-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--orange, #e26d5c);
+  }
+  
+  /* About me content */
+  .aboutme-content {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .aboutme-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .aboutme-content p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    color: #444;
+  }
+  
+  .aboutme-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .aboutme-content a {
+    color: var(--steelblue, #415A77);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--steelblue, #415A77);
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .aboutme-content a:hover {
+    color: var(--orange, #e26d5c);
+    border-color: var(--orange, #e26d5c);
+  }
+  
+  /* Image container and images */
+  .aboutme-images {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 80vh; */
-    width: 100%;
-    background-color: #f3f3f2;
-    color: #333;
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .aboutme-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 45%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .aboutme-image:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode .aboutme-container {
+    background-color: #2F3E46;
+  }
+  
+  body.dark-mode .aboutme-title {
+    color: #CAD2C5;
+  }
+  
+  body.dark-mode .aboutme-content {
+    background-color: #354F52;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  body.dark-mode .aboutme-content p {
+    color: #CAD2C5;
+  }
+  
+  body.dark-mode .aboutme-content a {
+    color: #CAD2C5;
+    border-color: #CAD2C5;
+  }
+  
+  body.dark-mode .aboutme-content a:hover {
+    color: var(--orange, #e26d5c);
+    border-color: var(--orange, #e26d5c);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .aboutme-title {
+      font-size: 1.8rem;
+    }
     
-}
-
-.aboutmeHeader {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--main-color);
-}
-.aboutmeBox {
-    background-color: #E0E1DD;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-right: 7em;
-    margin-left: 7em;
-    padding: 20px;  
-    max-width: 600px;
-    min-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-}
-.aboutmeBox p {
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    text-align: left;
-}
-
-.aboutmeImgWrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em 0;
-}
+    .aboutme-content {
+      padding: 1.5rem;
+    }
+    
+    .aboutme-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutme-container {
+      padding: 2rem 0.75rem;
+    }
+    
+    .aboutme-title {
+      font-size: 1.6rem;
+    }
+    
+    .aboutme-content {
+      padding: 1.25rem;
+    }
+    
+    .aboutme-images {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .aboutme-image {
+      max-width: 90%;
+    }
+  }

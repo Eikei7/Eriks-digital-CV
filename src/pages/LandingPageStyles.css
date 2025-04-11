@@ -1,143 +1,295 @@
-#wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 80vh;
-    width: 100%;
-    /* background-color: #f3f3f2; */
-    background-color: var(--almostwhite);
-    color: #333;
-    text-align: center;
-}
+/* LandingPageStyles.css - Modern and consistent with site design */
 
-#wrapper img {
+/* Landing container */
+.landing-container {
+    background-color: var(--almostwhite, #f3f3f2);
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Main content wrapper */
+  .landing-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 3rem;
+  }
+  
+  /* Profile section with image and ring animation */
+  .profile-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-container {
     position: relative;
-    border-radius: 50%;
-    z-index: 1;
-}
-  .ring {
     width: 400px;
     height: 400px;
+    max-width: 100%;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
-    background: conic-gradient(from 0deg, #07e8d6, #f39c12, #e74c3c, #07e8d6); /* Gradient runt cirkeln */
-    mask: radial-gradient(farthest-side, transparent calc(100% - 8px), white calc(100% - 8px)); /* Hål i mitten */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .profile-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, #07e8d6, #f39c12, #e74c3c, #07e8d6);
+    mask: radial-gradient(farthest-side, transparent calc(100% - 8px), white calc(100% - 8px));
     -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 8px), white calc(100% - 8px));
-    box-sizing: border-box;
     position: absolute;
     animation: spin 3s linear infinite;
     z-index: 2;
   }
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
   }
-}
-.container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-}
-
-.landingBox {
-    background-color: #E0E1DD;
-    width: 40%;
-    padding: 20px;
-    height: auto;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 5%;
-}
-
-.landingHeader {
-    font-size: 4rem;
-    color: var(--orange);
-    margin: 0px;
-    line-height: normal;
-}
-
-.landingSubheader {
-    font-size: 2rem;
-    color: var(--steelblue);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: normal;
-    text-align: center;
-}
-
-.landingText {
-    font-size: 1.2rem;
-    color: var(--steelblue);
-    padding: 0 50px 0 50px;
-    line-height: normal;
-}
-.svg-icon {
-    width: 5em;
-    height: auto;
-}
-.tooltip {
+  
+  /* Info section with text and skills */
+  .info-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .info-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Text styles */
+  .name-heading {
+    font-size: 3.5rem;
+    color: var(--orange, #e26d5c);
+    margin: 0;
+    line-height: 1.1;
+  }
+  
+  .title-heading {
+    font-size: 1.8rem;
+    color: var(--steelblue, #415A77);
+    margin: 0.5rem 0 1.5rem;
     position: relative;
     display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 90px;
-    background-color: #1CB0F6;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
+  }
+  
+  .title-heading::after {
+    content: '';
     position: absolute;
-    z-index: 1;
-    bottom: -60%;
-    left: 50%;
-    margin-left: -50px;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-@media (max-width: 1000px) {
-    .svg-icon {
-        width: 4em;
-        height: auto;
-      }
-    .landingHeader {
-        font-size: 3rem;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--orange, #e26d5c);
+  }
+  
+  .about-text {
+    margin: 1.5rem 0;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Skills grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-icon {
+    color: var(--steelblue, #415A77);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+  }
+  
+  .skill-item:hover .skill-icon {
+    color: var(--orange, #e26d5c);
+  }
+  
+  .skill-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode .landing-container {
+    background-color: #2F3E46;
+  }
+  
+  body.dark-mode .info-card {
+    background-color: #354F52;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  body.dark-mode .name-heading {
+    color: var(--orange, #e26d5c);
+  }
+  
+  body.dark-mode .title-heading {
+    color: #CAD2C5;
+  }
+  
+  body.dark-mode .about-text p {
+    color: #CAD2C5;
+  }
+  
+  body.dark-mode .skill-icon {
+    color: #CAD2C5;
+  }
+  
+  body.dark-mode .skill-item:hover .skill-icon {
+    color: var(--orange, #e26d5c);
+  }
+  
+  body.dark-mode .skill-name {
+    color: #adbac7;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .landing-content {
+      gap: 2rem;
     }
-    .container {
-        position: relative;
-        width: 300px;
-        height: 300px;
+    
+    .profile-container {
+      width: 350px;
+      height: 350px;
     }
-    .ring {
-        width: 300px;
-        height: 300px;
+    
+    .name-heading {
+      font-size: 3rem;
     }
-}
-@media (max-width: 768px) {
-    #wrapper {
-        flex-direction: column-reverse;
-        height: 100vh;
+    
+    .title-heading {
+      font-size: 1.6rem;
     }
-    .landingBox {
-        width: 80%;
-        height: auto;
+    
+    .info-card {
+      padding: 2rem;
     }
-    .landingHeader {
-        font-size: 3rem;
+    
+    .skills-grid {
+      grid-template-columns: repeat(4, 1fr);
     }
-    .landingSubheader {
-        font-size: 1.5rem;
+  }
+  
+  @media (max-width: 900px) {
+    .landing-content {
+      flex-direction: column;
+      gap: 2.5rem;
     }
-    .landingText {
-        font-size: 1.2rem;
+    
+    .profile-section,
+    .info-section {
+      width: 100%;
     }
-    .svg-icon {
-        width: 4em;
-        height: auto;
-      }
-}
+    
+    .profile-container {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .info-card {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .landing-container {
+      padding: 2rem 0.75rem;
+    }
+    
+    .profile-container {
+      width: 250px;
+      height: 250px;
+    }
+    
+    .name-heading {
+      font-size: 2.5rem;
+    }
+    
+    .title-heading {
+      font-size: 1.4rem;
+    }
+    
+    .about-text p {
+      font-size: 1rem;
+    }
+    
+    .info-card {
+      padding: 1.5rem;
+    }
+    
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    
+    .skill-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .profile-container {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

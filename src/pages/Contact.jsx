@@ -1,16 +1,21 @@
-import './ContactStyles.css'
-import FormComponent from '../components/FormComponent'
+import './ContactStyles.css';
+import FormComponent from '../components/FormComponent';
 
 const Contact = () => {
   return (
-    <div id="wrapperContact">
-      <div className='landingBox'>
-      <p className='landingText'>If you'd like to get in touch, send me a message using the form below and we'll take it from there!</p>
-      <p className='emoji'>📧</p>
-      <FormComponent />
+    <div className="contact-container">
+      <h2 className="contact-title">Get in Touch</h2>
+      
+      <div className="contact-content">
+        <div className="contact-intro">
+          <p>If you'd like to get in touch, send me a message using the form below and we'll take it from there!</p>
+          <span className="contact-emoji" aria-hidden="true">📧</span>
+        </div>
+        
+        <FormComponent />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

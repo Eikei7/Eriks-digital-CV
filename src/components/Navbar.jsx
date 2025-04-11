@@ -1,37 +1,88 @@
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './NavbarStyles.css';
 import Icon from '@mdi/react';
-import { mdiBriefcaseOutline, mdiHomeVariantOutline, mdiEmailOutline, mdiAccountTieOutline } from '@mdi/js';
+import { 
+  mdiBriefcaseOutline, 
+  mdiHomeVariantOutline, 
+  mdiEmailOutline, 
+  mdiAccountTieOutline,
+  mdiMenu,
+  mdiClose
+} from '@mdi/js';
 import DarkModeButton from './DarkModeButton';
 
-function Navbar () {
+function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  
+  // Kontrollera om användaren skrollar för att ändra navbar-stil
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
+  // Stäng menyn när användaren navigerar
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location]);
+  
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+  
+  const navLinks = [
+    { to: '/', icon: mdiHomeVariantOutline, text: 'Home' },
+    { to: '/projects', icon: mdiBriefcaseOutline, text: 'Projects' },
+    { to: '/aboutme', icon: mdiAccountTieOutline, text: 'About me' },
+    { to: '/contact', icon: mdiEmailOutline, text: 'Contact' }
+  ];
+  
+  const isActive = (path) => {
+    return location.pathname === path ? 'active' : '';
+  };
+
   return (
-    <nav>
-        <img src="./img/e-k-logo.png" alt="EK-logo" width="100"/>
-        <Link to='/'>
-        <button className="button" role="button">
-        <Icon path={mdiHomeVariantOutline} size={1.4} />
-        <span className="button-text">Home</span>
-        </button>
-        </Link>
-        <Link to='/projects'>
-        <button className="button" role="button">
-        <Icon path={mdiBriefcaseOutline} size={1.4} />
-        <span className="button-text">Projects</span></button>
-        </Link>
-        <Link to='/aboutme'>
-        <button className="button" role="button">
-        <Icon path={mdiAccountTieOutline} size={1.4} />
-        <span className="button-text">About me</span></button>
-        </Link>          
-        <Link to='/contact'>
-        <button className="button" role="button">
-        <Icon path={mdiEmailOutline} size={1.4} />
-        <span className="button-text">Contact</span></button>
-        </Link>
-        <DarkModeButton />
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${mobileMenuOpen ? 'menu-open' : ''}`}>
+      <div className="navbar-container">
+        <div className="navbar-logo">
+          <Link to="/">
+            <img src="./img/e-k-logo.png" alt="EK-logo" />
+          </Link>
+        </div>
+        
+        <div className="navbar-mobile-toggle" onClick={toggleMobileMenu}>
+          <Icon path={mobileMenuOpen ? mdiClose : mdiMenu} size={1.5} />
+        </div>
+        
+        <div className={`navbar-links ${mobileMenuOpen ? 'show' : ''}`}>
+          {navLinks.map((link, index) => (
+            <Link 
+              to={link.to} 
+              key={index} 
+              className={`nav-link ${isActive(link.to)}`}
+            >
+              <Icon path={link.icon} size={1.2} className="nav-icon" />
+              <span className="link-text">{link.text}</span>
+            </Link>
+          ))}
+        </div>
+        
+        <div className="navbar-actions">
+          <DarkModeButton />
+        </div>
+      </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
