@@ -40,28 +40,15 @@ const LandingPage = () => {
 
   return (
     <div className="landing-container">
-      <div className="landing-content">
-        <div className="profile-section">
-          <div className="profile-container">
-            <div className="profile-ring"></div>
-            <img 
-              src="./img/erik_headshot.png" 
-              alt="Erik Karlsson - Frontend Developer" 
-              className="profile-image"
-            />
-          </div>
-        </div>
-        
+      <div className="landing-content">       
         <div className="info-section">
           <div className="info-card">
             <h1 className="name-heading">Erik Karlsson</h1>
             <h2 className="title-heading">Frontend Developer</h2>
-            
             <div className="about-text">
               <p>I create web apps and I tinker with electronics.</p>
               <p>I feel confident in using the following web technologies and systems:</p>
             </div>
-            
             <div className="skills-grid">
               {techSkills.map((skill, index) => (
                 <div className="skill-item" key={index}>
@@ -78,6 +65,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+                
       </div>
     </div>
   );

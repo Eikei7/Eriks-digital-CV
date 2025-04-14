@@ -4,7 +4,16 @@ const AboutMe = () => {
   return (
     <div className="aboutme-container">
       <h2 className="aboutme-title">So who's Erik then?</h2>
-      
+      <div className="profile-section">
+          <div className="profile-container">
+            <div className="profile-ring"></div>
+            <img 
+              src="./img/erik_headshot.png" 
+              alt="Erik Karlsson - Frontend Developer" 
+              className="profile-image"
+            />
+          </div>
+        </div>
       <div className="aboutme-content">
         <p>I was born in the year when the <a href="https://en.wikipedia.org/wiki/Live_Aid" target="_blank" rel="noopener noreferrer">Live Aid concerts</a> took place, <a href="https://en.wikipedia.org/wiki/Windows_1.0" target="_blank" rel="noopener noreferrer">Microsoft's Windows 1.0</a> was released and <a href="https://en.wikipedia.org/wiki/Super_Mario_Bros." target="_blank" rel="noopener noreferrer">Super Mario Bros.</a> on the NES was available in shops.</p>
         
@@ -19,6 +28,7 @@ const AboutMe = () => {
         
         <p>Right around this time (circa 1998 - 2000) I also quickly grew an interest in computers and the technology behind them. On the hardware side for example, I learnt how graphics cards and RAM sticks worked, and practiced swapping them out for newer components on our shared family computer. Eventually I saved up for a video capture card, which allowed me to put our recorded family holiday videos onto the computer, and that's when my interest in multimedia and graphics began.</p>
       </div>
+      
     </div>
   )
 }
