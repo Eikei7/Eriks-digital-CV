@@ -4,7 +4,7 @@
   padding: 2rem 1rem;
   width: 100%;
   /* max-width: 1200px; */
-  margin: 0 auto;
+  /* margin: 4rem auto 1rem; */
   box-sizing: border-box;
 }
 
@@ -32,9 +32,9 @@
 /* Projects grid layout */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 /* Project card */
