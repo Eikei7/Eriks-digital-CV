@@ -79,6 +79,7 @@
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  width: fit-content;
   transition: background-color 0.2s ease;
 }
 
@@ -492,5 +493,184 @@ body.dark-mode .github-error p {
   
   .repo-updated {
     margin-top: 0.5rem;
+  }
+}
+
+/* Styling för projektkort med bakgrundsbild och överliggande text */
+
+/* Lägg till dessa stilar i din ProjectStyles.css */
+
+/* Huvudcontainer för projektkort med överlägg */
+.overlay-project-card {
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.overlay-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Bakgrundsbild */
+.overlay-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  display: flex;
+  align-items: flex-end; /* Placerar innehållet i botten */
+}
+
+.overlay-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0.1) 0%, 
+    rgba(0, 0, 0, 0.7) 80%);
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.overlay-project-card:hover .overlay-image::before {
+  background: linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0.2) 0%, 
+    rgba(0, 0, 0, 0.85) 80%);
+}
+
+/* Innehållscontainer med text och länk */
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  width: 100%;
+  color: white;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+
+.overlay-content.hovered {
+  transform: translateY(-10px);
+}
+
+/* Rubrik */
+.overlay-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Beskrivning */
+.overlay-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
+  opacity: 0.9;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.4s ease;
+}
+
+.overlay-content.hovered .overlay-description {
+  max-height: 200px;
+  opacity: 1;
+  margin-bottom: 1.5rem;
+}
+
+/* Länk-knapp */
+.overlay-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background-color: var(--orange, #e26d5c);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.overlay-content.hovered .overlay-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay-link:hover {
+  background-color: #f0876d;
+  transform: translateY(-2px);
+}
+
+.overlay-link .arrow {
+  margin-left: 5px;
+  transition: transform 0.2s ease;
+}
+
+.overlay-link:hover .arrow {
+  transform: translateX(3px);
+}
+
+/* Dark mode-anpassningar */
+body.dark-mode .overlay-project-card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .overlay-image::before {
+  background: linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0.2) 0%, 
+    rgba(0, 0, 0, 0.8) 80%);
+}
+
+body.dark-mode .overlay-project-card:hover .overlay-image::before {
+  background: linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0.3) 0%, 
+    rgba(0, 0, 0, 0.9) 80%);
+}
+
+/* Responsiv anpassning */
+@media (max-width: 768px) {
+  .overlay-image {
+    min-height: 250px;
+  }
+  
+  .overlay-title {
+    font-size: 1.3rem;
+  }
+  
+  .overlay-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-content {
+    padding: 1.2rem;
+  }
+  
+  .overlay-description {
+    display: block !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .overlay-link {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
   }
 }

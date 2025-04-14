@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import DataComponent from '../components/DataComponent';
 import './ProjectStyles.css';
+import OverlayProjectCard from '../components/OverlayProjectCard';
 
 const Projects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,15 +14,15 @@ const Projects = () => {
   };
 
   const closeModal = () => {
-    setIsModalOpen(false);
+    setIsModalOpen(false);  
     setCurrentImage(null);
   };
 
   const projects = [
     {
-      title: "Solaris",
+      title: "Nintendo Switch Game Tracker",
       url: "https://eikei7.github.io/Individuell-Examination-Solaris/",
-      image: "img/solaris.png",
+      image: "img/switch-game-library.png",
       description: "A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets."
     },
     {
@@ -44,33 +45,11 @@ const Projects = () => {
       
       <div className='projects-grid'>
         {projects.map((project, index) => (
-          <div className='project-card' key={index}>
-            <div className='project-header'>
-              <h2 className='project-title'>{project.title}</h2>
-              <a 
-                href={project.url} 
-                target='_blank' 
-                rel="noopener noreferrer"
-                className='project-link'
-              >
-                View Project <span className='arrow'>→</span>
-              </a>
-            </div>
-            
-            <div className='project-image-container'>
-              <img
-                src={project.image}
-                alt={project.title}
-                onClick={() => openModal(project.image)}
-                className="project-image"
-              />
-              <div className='image-overlay'>
-                <span>Click to enlarge</span>
-              </div>
-            </div>
-            
-            <p className='project-description'>{project.description}</p>
-          </div>
+          <OverlayProjectCard 
+            key={index}
+            project={project}
+            openModal={openModal}
+          />
         ))}
       </div>
 
