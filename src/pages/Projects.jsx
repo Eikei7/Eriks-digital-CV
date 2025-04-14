@@ -31,18 +31,6 @@ const Projects = () => {
       description: "A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets."
     },
     {
-      title: "Solaris",
-      url: "https://eikei7.github.io/Individuell-Examination-Solaris/",
-      image: "img/solaris.png",
-      description: "A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets."
-    },
-    {
-      title: "Solaris",
-      url: "https://eikei7.github.io/Individuell-Examination-Solaris/",
-      image: "img/solaris.png",
-      description: "A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets."
-    },
-    {
       title: "Beepbox Covers",
       url: "https://erik-beepbox.netlify.app/",
       image: "img/beepbox.png",

@@ -1,7 +1,6 @@
-// DataComponent.jsx
 import { useState, useEffect } from 'react';
 import { fetchData } from '../api';
-import '../index.css';
+import '../pages/ProjectStyles.css';
 
 const DataComponent = () => {
   const [data, setData] = useState(null);
@@ -109,7 +108,6 @@ const getLanguageColor = (language) => {
     Swift: '#F05138',
     Kotlin: '#A97BFF',
     Rust: '#DEA584',
-    // Default color for other languages
     default: '#8b949e'
   };
   
