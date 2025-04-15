@@ -20,16 +20,16 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "MusiQuiz",
+      url: "http://musiquiz-2025.s3-website.eu-north-1.amazonaws.com/",
+      image: "img/musiquiz.png",
+      description: "A full-stack degree project for school. Challenge a friend to a music quiz! Backend using AWS Lambda and DynamoDB, and a frontend with React. The project is deployed on AWS."
+    },
+    {
       title: "Solaris",
       url: "https://eikei7.github.io/Individuell-Examination-Solaris/",
       image: "img/solaris.png",
       description: "A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets."
-    },
-    {
-      title: "MusiQuiz",
-      url: "#",
-      image: "img/musiquiz.png",
-      description: "A full-stack degree project for school. "
     },
     {
       title: "Beepbox Covers",
