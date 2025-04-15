@@ -24,12 +24,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem; /* Lagt till margin för att skapa avstånd mellan info och profil */
-  margin-bottom: 3rem; /* Lite extra utrymme i botten */
 }
 
 .profile-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   height: 400px;
   max-width: 100%;
