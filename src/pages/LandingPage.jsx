@@ -12,17 +12,19 @@ import {
   mdiNodejs, 
   mdiWordpress,
   mdiPlex,
-  mdiMicrosoftVisualStudioCode
+  mdiMicrosoftVisualStudioCode,
+  mdiLambda
 } from '@mdi/js';
 
 const LandingPage = () => {
   const techSkills = [
-    { icon: mdiLanguageHtml5, name: 'HTML5' },
-    { icon: mdiLanguageCss3, name: 'CSS3' },
+    { icon: mdiLanguageHtml5, name: 'HTML' },
+    { icon: mdiLanguageCss3, name: 'CSS' },
     { icon: mdiLanguageJavascript, name: 'JavaScript' },
     { icon: mdiReact, name: 'React' },
     { icon: mdiNodejs, name: 'Node.js' },
     { icon: mdiAws, name: 'AWS' },
+    { icon: mdiLambda, name: 'Lambda' },
     { icon: mdiMicrosoftVisualStudioCode, name: 'VS Code' },
     { icon: mdiWordpress, name: 'WordPress' },
     { icon: mdiHomeAssistant, name: 'Home Assistant' },
