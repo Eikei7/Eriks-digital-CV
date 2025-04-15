@@ -21,15 +21,21 @@ const Projects = () => {
   const projects = [
     {
       title: "Nintendo Switch Game Tracker",
-      url: "https://eikei7.github.io/Individuell-Examination-Solaris/",
+      url: "#",
       image: "img/switch-game-library.png",
-      description: "A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets."
+      description: "A simple project which lists your Switch games and checks if they need an update."
     },
     {
       title: "Solaris",
       url: "https://eikei7.github.io/Individuell-Examination-Solaris/",
       image: "img/solaris.png",
       description: "A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets."
+    },
+    {
+      title: "MusiQuiz",
+      url: "#",
+      image: "img/musiquiz.png",
+      description: "A full-stack degree project for school. "
     },
     {
       title: "Beepbox Covers",
@@ -41,7 +47,7 @@ const Projects = () => {
 
   return (
     <div className='projects-container'>
-      <h2 className='projects-title'>Some web projects of mine:</h2>
+      <h2 className='projects-title'>Some live web projects of mine:</h2>
       
       <div className='projects-grid'>
         {projects.map((project, index) => (

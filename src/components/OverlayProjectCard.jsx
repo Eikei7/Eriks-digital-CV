@@ -25,7 +25,7 @@ const OverlayProjectCard = ({ project, openModal }) => {
             className="overlay-link"
             onClick={(e) => e.stopPropagation()}
           >
-            View Project <span className="arrow">→</span>
+            View Live <span className="arrow">→</span>
           </a>
         </div>
       </div>
