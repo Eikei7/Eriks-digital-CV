@@ -20,12 +20,6 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Nintendo Switch Game Tracker",
-      url: "#",
-      image: "img/switch-game-library.png",
-      description: "A simple project which lists your Switch games and checks if they need an update."
-    },
-    {
       title: "Solaris",
       url: "https://eikei7.github.io/Individuell-Examination-Solaris/",
       image: "img/solaris.png",
