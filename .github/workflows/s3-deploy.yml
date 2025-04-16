@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - main  # eller den branch du vill trigga deploys från
+  workflow_dispatch:  # Lägger till möjlighet att köra manuellt
 
 jobs:
   build-and-deploy:
@@ -16,7 +17,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '18'  # Använd den Node-version som passar ditt projekt
-        cache: 'npm'
+        # Ta bort cache-raden eller använd alternativ nedan
     
     - name: Installera dependencies
       run: npm ci  # Använder package-lock.json för exakt samma dependencies
@@ -32,5 +33,5 @@ jobs:
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'eu-north-1'
-        SOURCE_DIR: 'dist'
+        AWS_REGION: 'eu-north-1'  # Ändra till din region
+        SOURCE_DIR: 'dist'  # Här används dist-mappen som skapats i build-steget
