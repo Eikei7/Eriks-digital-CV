@@ -39,9 +39,17 @@ const Projects = () => {
     }
   ];
 
+  const videoProjects = [
+    {
+      id: "ixHAfx7IQEY",
+      title: "Birabuto Kingdom - Super Mario Land 2",
+      description: "A cover of the Birabuto Kingdom theme from Super Mario Land 2, made in BeepBox."
+    }
+  ];
+
   return (
     <div className='projects-container'>
-      <h2 className='projects-title'>Some live web projects of mine:</h2>
+      <h2 className='projects-title'>Some live web projects of mine</h2>
       
       <div className='projects-grid'>
         {projects.map((project, index) => (
@@ -65,6 +73,29 @@ const Projects = () => {
       )}
 
       <DataComponent />
+      
+      <section className="video-projects-section">
+        <h2 className='projects-title'>Other Projects</h2>
+        <div className="video-projects-grid">
+          {videoProjects.map((video, index) => (
+            <div key={index} className="video-card">
+              <div className="video-container">
+                <iframe 
+                  src={`https://www.youtube.com/embed/${video.id}`} 
+                  title={video.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                />
+              </div>
+              <div className="video-content">
+                <h3 className="video-title">{video.title}</h3>
+                <p className="video-description">{video.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

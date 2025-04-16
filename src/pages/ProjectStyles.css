@@ -669,3 +669,112 @@ body.dark-mode .overlay-project-card:hover .overlay-image::before {
     transform: translateY(0) !important;
   }
 }
+
+/* Video projects section */
+.video-projects-section {
+  margin: 4rem auto 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Video grid */
+.video-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Video card */
+.video-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive video container */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Video content */
+.video-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--steelblue, #415A77);
+  margin: 0 0 1rem;
+}
+
+.video-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Dark mode styles */
+body.dark-mode .video-card {
+  background-color: #354F52;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .video-title {
+  color: #CAD2C5;
+}
+
+body.dark-mode .video-description {
+  color: #CAD2C5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .video-projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .video-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .video-content {
+    padding: 1.25rem;
+  }
+}

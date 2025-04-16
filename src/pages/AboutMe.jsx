@@ -40,35 +40,38 @@ const AboutMe = () => {
       )
     },
     {
+      year: 2002,
+      title: "Media Studies",
+      image: "img/moviemaker.png",
+      content: (
+        <p>This year I started my media studies at Sundsvalls gymnasium. 
+          Three exciting years of learning how to use Adobe Photoshop, Adobe Illustrator, Macromedia Director, InDesign, Pro Tools and more.
+          I grew a fond interest for photography and sound work during this period. At home I used Adobe Audition to record myself playing guitar and singing.</p>
+      )
+    },
+    {
       year: 2005,
-      title: "Early Career",
+      title: "University studies",
       image: "img/umea.png",
       content: (
-        <p>I started studying to become a teacher in music and English at Umeå university in Sweden.</p>
+        <p>After college I decided that I wanted to become a teacher, so I applied and got accepted into the teacher programme at Umeå university in Sweden. My two subjects were Music and English. </p>
       )
     },
     {
       year: 2010,
-      title: "Teacher work",
+      title: "Teacher position",
       image: "img/musicteacher.jpg",
       content: (
         <p>I started my first real job as a music teacher at a school outside of Sundsvall, Sweden.</p>
       )
     },
     {
-      year: 2015,
-      title: "Professional Growth",
-      image: "img/windows1.png",
-      content: (
-        <p>By this time, I had accumulated significant experience in the tech industry, working with diverse teams and technologies.</p>
-      )
-    },
-    {
       year: 2020,
-      title: "Recent Years",
+      title: "Student assistant",
       image: "img/nti.png",
       content: (
-        <p>This was the year when working remotely became a reality for many people around the world. I had a position at a tech shool in Sundsvall, working as a student assistant.</p>
+        <p>This was the year when working remotely became a reality for many people around the world. I had a position at a tech college in Sundsvall, working as a student assistant. 
+          I came across many new and interesting subjects and technologies, such as JavaScript, PHP and Electromechanics.</p>
       )
     },
     {

@@ -46,17 +46,17 @@ const LandingPage = () => {
         <div className="info-section">
           <div className="info-card">
             <h1 className="name-heading">Erik Karlsson</h1>
-            <h2 className="title-heading">Frontend Developer</h2>
+            <h2 className="title-heading">Frontend developer and tech nerd</h2>
             <div className="about-text">
-              <p>I create web apps and I tinker with electronics.</p>
-              <p>I feel confident in using the following web technologies and systems:</p>
+              <p>I'm a creative person who loves anything tech and web related. I also have a fond interest of all kinds of music.</p>
+              <p>I know my way around the following web technologies and systems:</p>
             </div>
             <div className="skills-grid">
               {techSkills.map((skill, index) => (
                 <div className="skill-item" key={index}>
                   <div className="skill-icon">
                     {skill.icon ? (
-                      <Icon path={skill.icon} size={1.8} />
+                      <Icon path={skill.icon} size={1.9} />
                     ) : (
                       skill.svg
                     )}
