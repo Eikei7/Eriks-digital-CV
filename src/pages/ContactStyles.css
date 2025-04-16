@@ -41,7 +41,7 @@
   max-width: 600px;
   margin: 0 auto;
   width: 100%;
-  flex: 1;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -256,6 +256,7 @@ body.dark-mode .form-success p {
   
   .contact-content {
     padding: 1.5rem;
+    width: 90%;
   }
   
   .contact-intro p {
@@ -278,6 +279,7 @@ body.dark-mode .form-success p {
   
   .contact-content {
     padding: 1.25rem;
+    width: 90%;
   }
   
   .submit-button {
