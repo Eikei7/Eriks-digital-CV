@@ -1,5 +1,5 @@
 # Project Overview
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91df86bf-73e9-420b-a32e-5e1cb128e4d1/deploy-status)](https://app.netlify.com/sites/frontend-erik/deploys)
 ## Introduction
 This project is a Single Page Application (SPA) designed to showcase my profile, recent projects, and provide a means for contacting me. Leveraging modern web technologies and design principles, the SPA offers a seamless user experience.
 
