@@ -45,7 +45,7 @@ const LandingPage = () => {
       <div className="landing-content">       
         <div className="info-section">
           <div className="info-card">
-            <h1 className="name-heading">Erik Karlson</h1>
+            <h1 className="name-heading">Erik Karlsson</h1>
             <h2 className="title-heading">Frontend developer and tech nerd</h2>
             <div className="about-text">
               <p>I'm a creative person who loves anything tech and web related. I also have a fond interest of all kinds of music.</p>
