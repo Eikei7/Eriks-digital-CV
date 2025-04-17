@@ -241,9 +241,12 @@ body.dark-mode .skill-name {
 
 @media (max-width: 600px) {
 
-
   .landing-container {
     padding: 2rem 0.75rem;
+  }
+
+  .landing-content {
+    margin: 0 auto;
   }
   
   .profile-container {
