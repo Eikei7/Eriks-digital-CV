@@ -4,14 +4,17 @@
   width: 100%;
   height: auto;
   background-color: var(--almostwhite, #f3f3f2);
-  border-radius: 10px 10px 0 0;
   z-index: 1000;
   transition: all 0.3s ease;
+  /* background: #BE93C5;
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
+  background: linear-gradient(to right, #7BC6CC, #BE93C5); */
 }
 
 .navbar.scrolled {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
   height: 70px;
+  /* opacity: 0; */
 }
 
 .navbar-container {
@@ -124,8 +127,9 @@
 
 /* Dark Mode Styles */
 body.dark-mode .navbar {
-  background-color: #2F3E46;
-  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); */
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body.dark-mode .nav-link {

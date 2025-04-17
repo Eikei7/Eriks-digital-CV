@@ -7,6 +7,9 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  background: #BE93C5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7BC6CC, #BE93C5);
 }
 
 /* Main content wrapper */
@@ -45,7 +48,7 @@
   z-index: 1;
 }
 
-.profile-ring {
+/* .profile-ring {
   width: 80%;
   height: 80%;
   border-radius: 50%;
@@ -55,7 +58,7 @@
   position: absolute;
   animation: spin 3s linear infinite;
   z-index: 2;
-}
+} */
 
 @keyframes spin {
   to {
@@ -72,7 +75,7 @@
 }
 
 .info-card {
-  background-color: white;
+  background-color: rgba(255, 255, 255);
   border-radius: 12px;
   padding: 2.5rem;
   width: 100%;
@@ -159,7 +162,9 @@
 
 /* Dark mode styles */
 body.dark-mode .landing-container {
-  background-color: #2F3E46;
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body.dark-mode .info-card {
@@ -237,9 +242,6 @@ body.dark-mode .skill-name {
 
 @media (max-width: 600px) {
 
-  #root {
-    width: 100%;
-  }
 
   .landing-container {
     padding: 2rem 0.75rem;
@@ -278,9 +280,6 @@ body.dark-mode .skill-name {
 }
 
 @media (max-width: 400px) {
-  #root {
-    width: 100%;
-  }
   
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);

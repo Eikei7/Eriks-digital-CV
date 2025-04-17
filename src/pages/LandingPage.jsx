@@ -15,6 +15,8 @@ import {
   mdiMicrosoftVisualStudioCode,
   mdiLambda
 } from '@mdi/js';
+import AboutMe from './AboutMe';
+import Contact from './Contact';
 
 const LandingPage = () => {
   const techSkills = [
@@ -41,6 +43,7 @@ const LandingPage = () => {
   ];
 
   return (
+    <>
     <div className="landing-container">
       <div className="landing-content">       
         <div className="info-section">
@@ -69,7 +72,11 @@ const LandingPage = () => {
         </div>
                 
       </div>
-    </div>
+      
+     </div>
+     <AboutMe />
+     <Contact />
+    </>
   );
 };
 

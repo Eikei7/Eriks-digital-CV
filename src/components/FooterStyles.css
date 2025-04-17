@@ -1,14 +1,11 @@
 /* FooterStyles.css - Uppdaterad för konsekvent bredd */
 
 .footerBox {
-    background-color: var(--almostwhite, #f3f3f2);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem 1rem;
+    padding: 3rem 2rem;
     width: 100%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     box-sizing: border-box;
   }
   
@@ -17,13 +14,11 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 100%;
     box-sizing: border-box;
   }
   
   .footerCopyright {
-    color: var(--grey, #7c7c7c);
     font-size: 0.95rem;
     margin: 0;
   }
@@ -61,10 +56,7 @@
   body.dark-mode .footerBox {
     background-color: #2F3E46;
   }
-  
-  body.dark-mode .footerCopyright {
-    color: #adbac7;
-  }
+
   
   body.dark-mode .footerSocial img {
     filter: brightness(1.2);

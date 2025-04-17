@@ -42,9 +42,7 @@ function Navbar() {
   
   const navLinks = [
     { to: '/', icon: mdiHomeVariantOutline, text: 'Home' },
-    { to: '/projects', icon: mdiBriefcaseOutline, text: 'Projects' },
-    { to: '/aboutme', icon: mdiAccountTieOutline, text: 'About me' },
-    { to: '/contact', icon: mdiEmailOutline, text: 'Contact' }
+    { to: '/projects', icon: mdiBriefcaseOutline, text: 'Projects' }
   ];
   
   const isActive = (path) => {
