@@ -20,7 +20,7 @@ const AboutMe = () => {
       title: "Early Childhood",
       image: "img/mario-nes.jpg",
       content: (
-        <p>In the early 90s, I began developing my interest for video games. My sister and I shared a Nintendo 8-bit console between us, taking turns in playing Ice Climber, Zelda II, Volleyball and Super Mario bros. I found myself wondering about how video games work "under the hood".</p>
+        <p>In the early 90s, I began developing my interest for video games. My sister and I shared a <a href="https://sv.wikipedia.org/wiki/Nintendo_Entertainment_System" target="_blank">Nintendo 8-bit</a> console between us, taking turns in playing Ice Climber, Zelda II, Volleyball and Super Mario bros. I found myself wondering about how video games work "under the hood".</p>
       )
     },
     {
@@ -54,7 +54,7 @@ const AboutMe = () => {
       title: "University studies",
       image: "img/umea.png",
       content: (
-        <p>After college I decided that I wanted to become a teacher, so I applied and got accepted into the teacher programme at Umeå university in Sweden. My two subjects were Music and English. </p>
+        <p>After college I decided that I wanted to become a teacher, so I applied and got accepted into the teacher programme at <a href="https://umu.se" target="_blank">Umeå university</a> in Sweden. My two subjects were Music and English. </p>
       )
     },
     {
@@ -70,7 +70,7 @@ const AboutMe = () => {
       title: "Student assistant",
       image: "img/nti.png",
       content: (
-        <p>This was the year when working remotely became a reality for many people around the world. I had a position at a tech college in Sundsvall, working as a student assistant. 
+        <p>This was the year when working remotely became a reality for many people around the world. I had a position at <a href="https://ntigymnasiet.se/sundsvall/" target="_blank">NTI Gymnasiet</a> in Sundsvall, working as a student assistant. 
           I came across many new and interesting subjects and technologies, such as JavaScript, PHP and Electromechanics.</p>
       )
     },
@@ -79,7 +79,7 @@ const AboutMe = () => {
       title: "Frontend studies",
       image: "img/folkuniversitetet.jpg",
       content: (
-        <p>This year I began my two year path at Folkuniversitetet in Göteborg, Sweden to become a Frontend developer.</p>
+        <p>This year I began my two year path at <a href="https://www.folkuniversitetet.se/kontakt/goteborg/" target="_blank">Folkuniversitetet</a> in Göteborg, Sweden to become a Frontend developer.</p>
       )
     },
     {
