@@ -10,6 +10,9 @@ The Home view provides visitors with a brief introduction to who I am. It encaps
 ### Projects
 The Projects view dynamically fetches and displays my latest five projects directly from my GitHub repository using the GitHub API. Each project is presented with relevant details and links for further exploration.
 
+### About Me
+The About me section shows a timeline with life events concerning education, careers and interests.
+
 ### Contact
 The Contact view serves as a direct communication channel between visitors and myself. It features a user-friendly contact form where users can input their name, email address, and message. Upon submission, an email will be sent to me with the message provided.
 
