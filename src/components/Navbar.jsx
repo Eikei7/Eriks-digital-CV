@@ -52,11 +52,11 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${mobileMenuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-container">
-        <div className="navbar-logo">
+        {/* <div className="navbar-logo">
           <Link to="/">
             <img src="./img/e-k-logo.png" alt="EK-logo" />
           </Link>
-        </div>
+        </div> */}
         
         <div className="navbar-mobile-toggle" onClick={toggleMobileMenu}>
           <Icon path={mobileMenuOpen ? mdiClose : mdiMenu} size={1.5} />

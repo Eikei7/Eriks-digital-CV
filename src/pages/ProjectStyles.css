@@ -1,16 +1,18 @@
 /* Projects container */
 .projects-container {
-  background-color: var(--almostwhite, #f3f3f2);
   padding: 2.5rem 5rem;
   width: 100%;
   box-sizing: border-box;
+  background: #BE93C5;
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
+  background: linear-gradient(to right, #7BC6CC, #BE93C5);
 }
 
 /* Projects heading */
 .projects-title {
   font-size: 2.2rem;
   font-weight: 600;
-  color: var(--steelblue, #415A77);
+  color: white;
   margin-bottom: 2rem;
   text-align: center;
   position: relative;
@@ -219,7 +221,7 @@
 .github-title {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--steelblue, #415A77);
+  color: white;
   margin-bottom: 2rem;
   text-align: center;
   position: relative;
@@ -377,7 +379,7 @@ body.dark-mode .projects-title {
 }
 
 body.dark-mode .project-card {
-  background-color: #354F52;
+  background-color: #243b55;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -398,7 +400,7 @@ body.dark-mode .project-link:hover {
 }
 
 body.dark-mode .repo-card {
-  background-color: #354F52;
+  background-color:#243b55;
 }
 
 body.dark-mode .repo-name {
@@ -629,6 +631,13 @@ body.dark-mode .github-error p {
 }
 
 /* Dark mode-anpassningar */
+
+body.dark-mode .projects-container{
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 body.dark-mode .overlay-project-card {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
@@ -774,7 +783,7 @@ body.dark-mode .overlay-project-card:hover .overlay-image::before {
 
 /* Dark mode styles */
 body.dark-mode .video-card {
-  background-color: #354F52;
+  background-color: #243b55;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 

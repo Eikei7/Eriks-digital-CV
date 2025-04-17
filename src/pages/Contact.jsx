@@ -9,7 +9,6 @@ const Contact = () => {
       <div className="contact-content">
         <div className="contact-intro">
           <p>If you'd like to get in touch, send me a message using the form below and we'll take it from there!</p>
-          <span className="contact-emoji" aria-hidden="true">📧</span>
         </div>
         
         <FormComponent />

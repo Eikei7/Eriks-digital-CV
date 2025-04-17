@@ -1,7 +1,7 @@
 /* Contact container */
 .contact-container {
   background-color: var(--almostwhite, #f3f3f2);
-  padding: 0 1rem;
+  padding: 0 1rem 5rem 1rem;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -216,7 +216,7 @@ body.dark-mode .contact-title {
 }
 
 body.dark-mode .contact-content {
-  background-color: #354F52;
+  background-color: #243b55;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 

@@ -54,17 +54,11 @@ body.dark-mode .landing-container {
   background-color: #4785a7;
 }
 
-body.dark-mode .footerBox {
-  background-color: #2F3E46;
-}
-
 /* Nya selektorer */
-body.dark-mode .info-card,
-body.dark-mode .contact-content,
 body.dark-mode .project-card,
 body.dark-mode .aboutme-content,
 body.dark-mode .repo-card {
-  background-color: #354F52;
+  background-color: #243b55;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   color: #CAD2C5;
 }
