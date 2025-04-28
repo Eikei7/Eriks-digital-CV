@@ -37,14 +37,14 @@ const AboutMe = () => {
       image: "img/moviemaker.png",
       content: (
         <p>Eventually I saved up for a video capture card, which allowed me to put our recorded family holiday videos onto our computer, 
-          and that's when my interest in multimedia and graphics really took off. I frequently visited websites like Newgrounds (flash animation) and DeviantArt (photos and digital art)'
-          for inspiration.</p>
+          and that's when my interest in multimedia and graphics really took off. I frequently visited websites like <a href="https://www.newgrounds.com/" target="_blank">Newgrounds</a> 
+          (flash animation) and <a href="https://www.deviantart.com/" target="_blank">DeviantArt</a> (photos and digital art) for inspiration.</p>
       )
     },
     {
       year: 2002,
       title: "Media Studies",
-      image: "img/moviemaker.png",
+      image: "img/sg_logo.png",
       content: (
         <p>This year I started my media studies at Sundsvalls gymnasium. 
           Three exciting years of learning how to use Adobe Photoshop, Adobe Illustrator, Macromedia Director, InDesign, Pro Tools and more.
