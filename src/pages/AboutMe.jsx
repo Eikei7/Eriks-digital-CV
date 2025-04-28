@@ -87,12 +87,12 @@ const AboutMe = () => {
       title: "Future Goals",
       image: "img/developer.png",
       content: (
-        <p>Looking forward to graduate in June, I hope to succeed in finding a place to work where I can make use of my skills in web development, contributing to meaningful projects, and perhaps exploring new areas like AI integration.</p>
+        <p>Looking forward to graduate in June, I hope to succeed in finding a place to work where I can make use of my skills in web development, 
+          contributing to meaningful projects, and perhaps exploring new areas like mobile app development or AI integration.</p>
       )
     }
   ];
   
-  // Funktion för att scrolla till ett event när man klickar på året
   const scrollToEvent = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -100,13 +100,11 @@ const AboutMe = () => {
     }
   };
   
-  // Funktion för att uppdatera aktivt år
   const handleYearClick = (year) => {
     setActiveYear(year);
     scrollToEvent(`event-${year}`);
   };
   
-  // Sätt upp scroll-lyssnare för att uppdatera aktivt år baserat på scroll-position
   useEffect(() => {
     const handleScroll = () => {
       const events = timelineData.map(item => {
@@ -121,7 +119,6 @@ const AboutMe = () => {
         return { year: item.year, distance: Infinity };
       });
       
-      // Sortera efter avstånd till mitten av skärmen
       events.sort((a, b) => a.distance - b.distance);
       
       if (events.length > 0 && events[0].year !== activeYear) {
