@@ -36,7 +36,9 @@ const AboutMe = () => {
       title: "Digital Media Beginnings",
       image: "img/moviemaker.png",
       content: (
-        <p>Eventually I saved up for a video capture card, which allowed me to put our recorded family holiday videos onto the computer, and that's when my interest in multimedia and graphics began.</p>
+        <p>Eventually I saved up for a video capture card, which allowed me to put our recorded family holiday videos onto our computer, 
+          and that's when my interest in multimedia and graphics really took off. I frequently visited websites like Newgrounds (flash animation) and DeviantArt (photos and digital art)'
+          for inspiration.</p>
       )
     },
     {
