@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './LandingPageStyles.css';
 import Icon from '@mdi/react';
 import { 
@@ -19,6 +19,9 @@ import AboutMe from './AboutMe';
 import Contact from './Contact';
 
 const LandingPage = () => {
+  const contactRef = useRef(null);
+  const isSnapping = useRef(false);
+  
   const techSkills = [
     { icon: mdiLanguageHtml5, name: 'HTML' },
     { icon: mdiLanguageCss3, name: 'CSS' },
@@ -42,40 +45,81 @@ const LandingPage = () => {
     { icon: mdiPlex , name: 'Plex' },
   ];
 
+  useEffect(() => {
+    // Function to handle scrolling and snapping
+    const handleScroll = () => {
+      // Skip if currently snapping to avoid infinite loops
+      if (isSnapping.current) return;
+      
+      if (contactRef.current) {
+        const contactRect = contactRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // Calculate how close the contact section is to the viewport
+        // Snap when the top of the contact section is within 40% of the viewport height
+        const snapThreshold = windowHeight * 0.4;
+        
+        if (contactRect.top > 0 && contactRect.top < snapThreshold) {
+          isSnapping.current = true;
+          
+          // Smoothly scroll to the contact section
+          contactRef.current.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start' 
+          });
+          
+          // Reset snapping flag after animation completes
+          setTimeout(() => {
+            isSnapping.current = false;
+          }, 1000); // Adjust timeout based on your scroll animation duration
+        }
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Clean up
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-    <div className="landing-container">
-      <div className="landing-content">       
-        <div className="info-section">
-          <div className="info-card">
-            <h1 className="name-heading">Erik Karlsson</h1>
-            <h2 className="title-heading">Frontend developer and tech nerd</h2>
-            <div className="about-text">
-              <p>I'm a creative person who loves anything tech and web related. I also have a fond interest of all kinds of music.</p>
-              <p>I know my way around the following web technologies and systems:</p>
-            </div>
-            <div className="skills-grid">
-              {techSkills.map((skill, index) => (
-                <div className="skill-item" key={index}>
-                  <div className="skill-icon">
-                    {skill.icon ? (
-                      <Icon path={skill.icon} size={1.9} />
-                    ) : (
-                      skill.svg
-                    )}
+      <div className="landing-container">
+        <div className="landing-content">       
+          <div className="info-section">
+            <div className="info-card">
+              <h1 className="name-heading">Erik Karlsson</h1>
+              <h2 className="title-heading">Frontend developer and tech nerd</h2>
+              <div className="about-text">
+                <p>I'm a creative person who loves anything tech and web related. I also have a fond interest of all kinds of music.</p>
+                <p>I know my way around the following web technologies and systems:</p>
+              </div>
+              <div className="skills-grid">
+                {techSkills.map((skill, index) => (
+                  <div className="skill-item" key={index}>
+                    <div className="skill-icon">
+                      {skill.icon ? (
+                        <Icon path={skill.icon} size={1.9} />
+                      ) : (
+                        skill.svg
+                      )}
+                    </div>
+                    <span className="skill-name">{skill.name}</span>
                   </div>
-                  <span className="skill-name">{skill.name}</span>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
-                
       </div>
-      
-     </div>
-     <AboutMe />
-     <Contact />
+
+      {/* Pass ref to Contact component */}
+      <div ref={contactRef}>
+        <Contact />
+      </div>
     </>
   );
 };
