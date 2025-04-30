@@ -21,9 +21,9 @@ const Projects = () => {
   const projects = [
     {
       title: "MusiQuiz",
-      url: "http://musiquiz-2025.s3-website.eu-north-1.amazonaws.com/",
+      url: "https://musi-quiz.netlify.app/",
       image: "img/musiquiz.png",
-      description: "A full-stack degree project for school. Challenge a friend to a music quiz! Backend using AWS Lambda and DynamoDB, and frontend with React/Vite. The project is deployed on AWS."
+      description: "A full-stack degree project for school. Challenge a friend to a music quiz! Backend using AWS Lambda and DynamoDB, and frontend with React/Vite."
     },
     {
       title: "Solaris",
