@@ -47,30 +47,18 @@
   z-index: 1;
 }
 
-/* .profile-ring {
-  width: 80%;
-  height: 80%;
-  border-radius: 50%;
-  background: conic-gradient(from 0deg, #07e8d6, #f39c12, #e74c3c, #07e8d6);
-  mask: radial-gradient(farthest-side, transparent calc(100% - 8px), white calc(100% - 8px));
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 8px), white calc(100% - 8px));
-  position: absolute;
-  animation: spin 3s linear infinite;
-  z-index: 2;
-} */
-
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
 }
 
-/* Info section with text and skills */
+
 .info-section {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 800px; /* Ökad maxbredd för att ge mer utrymme */
+  max-width: 800px;
 }
 
 .info-card {
@@ -118,7 +106,6 @@
   margin-bottom: 1rem;
 }
 
-/* Skills grid */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
@@ -159,11 +146,11 @@
   text-align: center;
 }
 
-/* Dark mode styles */
+
 body.dark-mode .landing-container {
-  background: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #141E30;
+  background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+  background: linear-gradient(to right, #243B55, #141E30);
 }
 
 body.dark-mode .info-card {
