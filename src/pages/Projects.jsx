@@ -32,6 +32,12 @@ const Projects = () => {
       description: "A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets."
     },
     {
+      title: "Weather Dashboard",
+      url: "https://eriks-weather-dashboard.netlify.app/",
+      image: "img/weather.png",
+      description: "A weather dashboard which uses OperWeatherMap API to display weather information."
+    },
+    {
       title: "Beepbox Covers",
       url: "https://erik-beepbox.netlify.app/",
       image: "img/beepbox.png",
