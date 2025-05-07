@@ -50,6 +50,11 @@ const Projects = () => {
       id: "ixHAfx7IQEY",
       title: "Birabuto Kingdom - Super Mario Land 2",
       description: "A cover of the Birabuto Kingdom theme from Super Mario Land 2, made in BeepBox."
+    },
+    {
+      id: "Cz3iBitQFoc",
+      title: "Playing birdsong on Alexa speakers using ESP32+RFID",
+      description: "A microcontroller project where I scan tags underneath Decobirds to play their call on a smart speaker."
     }
   ];
 
