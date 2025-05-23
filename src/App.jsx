@@ -13,9 +13,9 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Erik | Frontend Developer</title>
+        <title>Erik Karlsson | Frontend Developer</title>
         <meta name="description" content="Digital CV of Erik, a passionate Frontend Developer specializing in React, JavaScript, and responsive web design." />
-        <meta name="keywords" content="Frontend Developer, React Developer, Web Developer Portfolio, JavaScript Developer, UI/UX Design, Sundsvall Developer" />
+        <meta name="keywords" content="Frontendutvecklare, React utvecklare, webbutvecklare Portfolio, JavaScript utvecklare, UI/UX Design, Sundsvall webbutvecklare" />
         <meta name="author" content="Erik" />
         <link rel="canonical" href="https://frontend-erik.netlify.app/" />
       </Helmet>

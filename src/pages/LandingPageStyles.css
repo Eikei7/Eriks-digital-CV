@@ -136,7 +136,7 @@
 }
 
 .skill-item:hover .skill-icon {
-  color: var(--orange, #e26d5c);
+  color: var(--steelblue);
 }
 
 .skill-name {
@@ -175,7 +175,7 @@ body.dark-mode .skill-icon {
 }
 
 body.dark-mode .skill-item:hover .skill-icon {
-  color: var(--orange, #e26d5c);
+  color: white;
 }
 
 body.dark-mode .skill-name {

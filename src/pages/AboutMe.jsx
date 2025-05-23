@@ -73,7 +73,11 @@ const AboutMe = () => {
       image: "img/nti.png",
       content: (
         <p>This was the year when working remotely became a reality for many people around the world. I had a position at <a href="https://ntigymnasiet.se/sundsvall/" target="_blank">NTI Gymnasiet</a> in Sundsvall, working as a student assistant. 
-          I came across many new and interesting subjects and technologies, such as JavaScript, PHP and Electromechanics.</p>
+          I came across many new and interesting subjects and technologies, such as JavaScript, PHP and Electromechanics.
+          <br/>
+          I was also introduced to <a href="https://www.home-assistant.io/" target="_blank">Home Assistant</a>, a home automation platform that allows you to control and automate various devices in your home.
+          I started to build my own smart home system using Home Assistant, which sparked my interest in programming and automation.
+          </p>
       )
     },
     {
