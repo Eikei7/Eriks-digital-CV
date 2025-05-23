@@ -7,11 +7,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Provider } from "react-redux";
 import store from './store/store';
 import AboutMe from './pages/AboutMe';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function App() {
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>Erik | Frontend Developer</title>
         <meta name="description" content="Digital CV of Erik, a passionate Frontend Developer specializing in React, JavaScript, and responsive web design." />
@@ -31,7 +31,7 @@ function App() {
           <Footer />
         </Router>
       </Provider>
-    </>
+    </HelmetProvider>
   );
 }
 
