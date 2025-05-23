@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.contact-title::after {
+/* .contact-title::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -32,7 +32,7 @@
   width: 180px;
   height: 2px;
   background-color: var(--orange, #e26d5c);
-}
+} */
 
 /* Contact content */
 .contact-content {
@@ -48,7 +48,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 /* Contact intro section */
 .contact-intro {

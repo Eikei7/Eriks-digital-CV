@@ -85,15 +85,15 @@
   display: inline-block;
 }
 
-.title-heading::after {
+/* .title-heading::after {
   content: '';
   position: absolute;
   bottom: -10px;
   left: 0;
   width: 60px;
   height: 3px;
-  background-color: var(--orange, #e26d5c);
-}
+  background-color: var(--steelblue, #e26d5c);
+} */
 
 .about-text {
   margin: 1.5rem 0;
