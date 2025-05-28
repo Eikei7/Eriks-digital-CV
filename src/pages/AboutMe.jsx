@@ -37,8 +37,7 @@ const AboutMe = () => {
       image: "img/moviemaker.png",
       content: (
         <p>Eventually I saved up for a video capture card, which allowed me to put our recorded family holiday videos onto our computer, 
-          and that's when my interest in multimedia and graphics really took off. I frequently visited websites like <a href="https://www.newgrounds.com/" target="_blank">Newgrounds</a> 
-          (flash animation) and <a href="https://www.deviantart.com/" target="_blank">DeviantArt</a> (photos and digital art) for inspiration.</p>
+          and that's when my interest in multimedia and graphics really took off. I frequently visited websites like <a href="https://www.newgrounds.com/" target="_blank">Newgrounds</a> (flash animation) and <a href="https://www.deviantart.com/" target="_blank">DeviantArt</a> (photos and digital art) for inspiration.</p>
       )
     },
     {
@@ -155,7 +154,6 @@ const AboutMe = () => {
             <div className="vertical-timeline-line"></div>
           </div>
         </div>
-        
         <div className="vertical-events-container">
           {timelineData.map((item) => (
             <div 
@@ -163,25 +161,28 @@ const AboutMe = () => {
               key={item.year} 
               className={`vertical-event ${item.year === activeYear ? 'active' : ''}`}
             >
-              <div className="vertical-event-marker"></div>
               <div className="vertical-event-content">
-                <h3 className="vertical-event-title">
-                  <span className="vertical-event-year">{item.year}</span>
-                  {item.title}
-                </h3>
-                <div className="vertical-event-body">
-                  <div className="vertical-event-flex">
-                    <div className="vertical-event-text">
-                      {item.content}
-                    </div>
-                    {item.image && (
-                      <div className="vertical-event-image">
-                        <img src={item.image} alt={`${item.title} illustration`} />
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
+  <div className="vertical-event-main-flex">
+    <div className="vertical-event-left">
+      <h3 className="vertical-event-title">
+        <span className="vertical-event-year">{item.year}</span>
+        {item.title}
+      </h3>
+      <div className="vertical-event-body">
+        <div className="vertical-event-text">
+          {item.content}
+        </div>
+      </div>
+    </div>
+    {item.image && (
+      <div className="vertical-event-right">
+        <div className="vertical-event-image">
+          <img src={item.image} alt={`${item.title} illustration`} />
+        </div>
+      </div>
+    )}
+  </div>
+</div>
             </div>
           ))}
         </div>
