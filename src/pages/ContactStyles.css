@@ -9,8 +9,8 @@
   display: flex;
   flex-direction: column;
   background: #BE93C5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
+  background: linear-gradient(to right, #7BC6CC, #BE93C5);
 }
 
 /* Contact heading */
@@ -22,17 +22,6 @@
   text-align: center;
   position: relative;
 }
-
-/* .contact-title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 180px;
-  height: 2px;
-  background-color: var(--orange, #e26d5c);
-} */
 
 /* Contact content */
 .contact-content {
@@ -62,12 +51,6 @@
   margin-bottom: 1rem;
 }
 
-.contact-emoji {
-  font-size: 3rem;
-  display: block;
-  margin: 1rem 0;
-}
-
 /* Form container */
 .form-container {
   width: 100%;
@@ -88,6 +71,7 @@
   font-weight: 500;
   color: var(--steelblue, #415A77);
   font-size: 0.95rem;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .form-input {
@@ -96,7 +80,7 @@
   border: 2px solid var(--steelblue, #415A77);
   border-radius: 8px;
   background-color: var(--almostwhite, #f3f3f2);
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   color: #333;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -122,7 +106,7 @@ textarea.form-input {
   border: none;
   border-radius: 8px;
   padding: 14px 20px;
-  font-family: 'Fira Sans', sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
