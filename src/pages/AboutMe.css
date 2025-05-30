@@ -12,7 +12,7 @@
 
 /* About me heading */
 .aboutme-title {
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: 600;
   color: #fff;
   margin-bottom: 2rem;
@@ -127,19 +127,6 @@
   display: none;
 }
 
-/* .vertical-event-content {
-  background-color: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.vertical-event.active .vertical-event-content {
-  transform: translateY(-5px);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-} */
-
 .vertical-event-content {
   background-color: white;
   border-radius: 12px;
@@ -157,7 +144,6 @@
 .vertical-event-main-flex {
   display: flex;
   gap: 2rem;
-  /* align-items: flex-start; */
 }
 
 /* Left container for title and description */
@@ -177,17 +163,6 @@
   justify-content: center;
 }
 
-/* .vertical-event-title {
-  font-size: 1.5rem;
-  color: var(--steelblue, #415A77);
-  margin: 0;
-  padding: 1.5rem 1.5rem 0.5rem;
-  position: relative;
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-} */
-
 .vertical-event-title {
   font-size: 1.5rem;
   color: var(--steelblue, #415A77);
@@ -199,46 +174,22 @@
 }
 
 .vertical-event-year {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'DM Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   /* font-size: 3rem; */
   font-size: 2.5rem;
-  font-weight: 100;
+  font-weight: 400;
   color: var(--orange, #e26d5c);
   opacity: 0.9;
 }
-
-/* .vertical-event-body {
-  padding: 1rem 1.5rem 1.5rem;
-} */
 
 .vertical-event-body {
   padding: 0; /* Remove padding since it's now in the main container */
 }
 
 
-/* .vertical-event-flex {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-} */
-
-/* Remove the old flex structure since we're replacing it */
 .vertical-event-flex {
   display: block; /* Change from flex to block */
 }
-
-/* .vertical-event-text {
-  flex: 3;
-} */
-
-/* .vertical-event-image {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 200px;
-  height: 200px;
-} */
 
 .vertical-event-image {
   width: 100%;
@@ -255,18 +206,11 @@
   transform: scale(1.03);
 }
 
-/* .vertical-event-body p {
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  font-size: 1.05rem;
-  color: #444;
-} */
-
 .vertical-event-body p {
   line-height: 1.7;
   font-size: 1.05rem;
   color: #444;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 .vertical-event-body p:last-child {
@@ -284,16 +228,6 @@
   color: var(--orange, #e26d5c);
   border-color: var(--orange, #e26d5c);
 }
-
-/* Timeline images */
-/* .timeline-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 1.5rem 0 2rem;
-  flex-wrap: wrap;
-} */
 
 .timeline-images img {
   border-radius: 8px;
@@ -374,7 +308,7 @@ body.dark-mode .vertical-event-body a:hover {
 /* Responsive styles */
 @media (max-width: 768px) {
   .aboutme-title {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
   
   .vertical-timeline-container {
@@ -476,7 +410,7 @@ body.dark-mode .vertical-event-body a:hover {
   }
   
   .aboutme-title {
-    font-size: 1.6rem;
+    font-size: 2.8rem;
   }
   
   .profile-container {

@@ -10,24 +10,13 @@
 
 /* Projects heading */
 .projects-title {
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: 600;
   color: white;
   margin-bottom: 2rem;
   text-align: center;
   position: relative;
 }
-
-/* .projects-title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background-color: var(--steelblue);
-} */
 
 /* Projects grid layout */
 .projects-grid {
@@ -66,7 +55,7 @@
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 3.2rem;
   font-weight: 600;
   color: var(--steelblue, #415A77);
   margin: 0;
@@ -219,7 +208,7 @@
 }
 
 .github-title {
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 600;
   color: white;
   margin-bottom: 2rem;
@@ -435,7 +424,11 @@ body.dark-mode .github-error p {
   }
 
   .projects-title {
-    font-size: 1.8rem;
+    font-size: 3.2rem;
+  }
+
+  .github-title {
+  font-size: 3.2rem;
   }
 
   .project-header {
@@ -452,9 +445,6 @@ body.dark-mode .github-error p {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
   
-  .github-title {
-    font-size: 1.8rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -463,7 +453,11 @@ body.dark-mode .github-error p {
   }
 
   .projects-title {
-    font-size: 1.6rem;
+    font-size: 2.8rem;
+  }
+
+  .github-title {
+  font-size: 2.8rem;
   }
 
   .projects-grid {
@@ -487,9 +481,6 @@ body.dark-mode .github-error p {
     grid-template-columns: 1fr;
   }
   
-  .github-title {
-    font-size: 1.6rem;
-  }
   
   .repo-footer {
     flex-direction: column;

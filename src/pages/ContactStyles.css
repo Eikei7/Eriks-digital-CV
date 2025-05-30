@@ -15,7 +15,7 @@
 
 /* Contact heading */
 .contact-title {
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: 600;
   color: var(--almostwhite, #f3f3f2);
   margin-bottom: 2rem;
@@ -71,7 +71,6 @@
   font-weight: 500;
   color: var(--steelblue, #415A77);
   font-size: 0.95rem;
-  font-family: 'DM Sans', sans-serif;
 }
 
 .form-input {
@@ -106,8 +105,8 @@ textarea.form-input {
   border: none;
   border-radius: 8px;
   padding: 14px 20px;
-  /* font-family: 'Fira Sans', sans-serif; */
-  font-size: 1.1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.3rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
@@ -240,7 +239,7 @@ body.dark-mode .form-success p {
 /* Responsive styles */
 @media (max-width: 768px) {
   .contact-title {
-    font-size: 1.8rem;
+    font-size: 3.2rem;
   }
   
   .contact-content {
@@ -263,7 +262,7 @@ body.dark-mode .form-success p {
   }
   
   .contact-title {
-    font-size: 1.6rem;
+    font-size: 2.8rem;
   }
   
   .contact-content {
