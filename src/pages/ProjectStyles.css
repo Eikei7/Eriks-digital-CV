@@ -481,7 +481,6 @@ body.dark-mode .github-error p {
     grid-template-columns: 1fr;
   }
   
-  
   .repo-footer {
     flex-direction: column;
     align-items: flex-start;
@@ -506,7 +505,6 @@ body.dark-mode .github-error p {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-/* Bakgrundsbild */
 .overlay-image {
   position: relative;
   width: 100%;
@@ -517,7 +515,7 @@ body.dark-mode .github-error p {
   cursor: pointer;
   transition: transform 0.5s ease;
   display: flex;
-  align-items: flex-end; /* Detta placerar innehållet längst ned */
+  align-items: flex-end;
 }
 
 .overlay-image::before {
@@ -594,7 +592,7 @@ body.dark-mode .github-error p {
   align-items: center;
   padding: 0.5rem 1rem;
   border-radius: 30px;
-  background-color: var(--orange, #e26d5c);
+  background-color: black;
   color: white;
   text-decoration: none;
   font-weight: 500;

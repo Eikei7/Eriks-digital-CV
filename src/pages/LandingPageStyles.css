@@ -72,6 +72,7 @@
 /* Text styles */
 .name-heading {
   font-size: 3.5rem;
+  font-style: bold;
   color: #86b8db;
   margin: 0;
   line-height: 1.1;

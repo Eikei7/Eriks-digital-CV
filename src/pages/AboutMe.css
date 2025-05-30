@@ -10,7 +10,6 @@
 
 }
 
-/* About me heading */
 .aboutme-title {
   font-size: 3.2rem;
   font-weight: 600;
@@ -20,13 +19,11 @@
   position: relative;
 }
 
-/* Vertical Timeline Container */
 .vertical-timeline-container {
   display: flex;
   margin: 2rem 0;
 }
 
-/* Years sidebar */
 .vertical-years-container {
   width: 80px;
   position: sticky;
@@ -100,7 +97,6 @@
   right: 19px;
 }
 
-/* Events container */
 .vertical-events-container {
   flex: 1;
   padding-left: 20px;
@@ -133,7 +129,7 @@
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  padding: 1.5rem; /* Add padding to the main container */
+  padding: 1.5rem;
 }
 
 .vertical-event.active .vertical-event-content {
@@ -146,14 +142,12 @@
   gap: 2rem;
 }
 
-/* Left container for title and description */
 .vertical-event-left {
   flex: 2;
   display: flex;
   flex-direction: column;
 }
 
-/* Right container for image */
 .vertical-event-right {
   flex: 1;
   max-width: 200px;
@@ -166,7 +160,7 @@
 .vertical-event-title {
   font-size: 1.5rem;
   color: var(--steelblue, #415A77);
-  margin: 0 0 1rem 0; /* Add bottom margin */
+  margin: 0 0 1rem 0;
   position: relative;
   display: flex;
   align-items: baseline;
@@ -175,7 +169,6 @@
 
 .vertical-event-year {
   font-family: 'DM Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* font-size: 3rem; */
   font-size: 2.5rem;
   font-weight: 400;
   color: var(--orange, #e26d5c);
@@ -183,12 +176,12 @@
 }
 
 .vertical-event-body {
-  padding: 0; /* Remove padding since it's now in the main container */
+  padding: 0;
 }
 
 
 .vertical-event-flex {
-  display: block; /* Change from flex to block */
+  display: block;
 }
 
 .vertical-event-image {
@@ -241,11 +234,10 @@
   transform: scale(1.03);
 }
 
-/* Dark mode styles */
 body.dark-mode .aboutme-container {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30);
   }
 
 
@@ -305,7 +297,6 @@ body.dark-mode .vertical-event-body a:hover {
   border-color: var(--orange, #e26d5c);
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .aboutme-title {
     font-size: 2.8rem;
