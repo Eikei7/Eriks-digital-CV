@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import './LandingPageStyles.css';
 import Icon from '@mdi/react';
 import { 
@@ -15,7 +15,6 @@ import {
   mdiMicrosoftVisualStudioCode,
   mdiLambda
 } from '@mdi/js';
-import AboutMe from './AboutMe';
 import Contact from './Contact';
 
 const LandingPage = () => {
@@ -44,46 +43,6 @@ const LandingPage = () => {
     { icon: mdiMicrosoftWindows, name: 'Windows' },
     { icon: mdiPlex , name: 'Plex' },
   ];
-
-  useEffect(() => {
-    // Function to handle scrolling and snapping
-    const handleScroll = () => {
-      // Skip if currently snapping to avoid infinite loops
-      if (isSnapping.current) return;
-      
-      if (contactRef.current) {
-        const contactRect = contactRef.current.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        
-        // Calculate how close the contact section is to the viewport
-        // Snap when the top of the contact section is within 40% of the viewport height
-        const snapThreshold = windowHeight * 0.4;
-        
-        if (contactRect.top > 0 && contactRect.top < snapThreshold) {
-          isSnapping.current = true;
-          
-          // Smoothly scroll to the contact section
-          contactRef.current.scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'start' 
-          });
-          
-          // Reset snapping flag after animation completes
-          setTimeout(() => {
-            isSnapping.current = false;
-          }, 1000); // Adjust timeout based on your scroll animation duration
-        }
-      }
-    };
-
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-    
-    // Clean up
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <>
@@ -116,8 +75,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* Pass ref to Contact component */}
-      <div ref={contactRef}>
+      <div>
         <Contact />
       </div>
     </>

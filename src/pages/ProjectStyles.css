@@ -75,7 +75,7 @@
 }
 
 .project-link:hover {
-  background-color: var(--orange, #e26d5c);
+  background-color: var(--steelblue, #415A77);
   color: white !important;
 }
 
@@ -216,18 +216,6 @@
   position: relative;
 }
 
-/* .github-title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background-color: var(--steelblue);
-} */
-
-/* Repository grid */
 .repo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -235,7 +223,6 @@
   margin-bottom: 3rem;
 }
 
-/* Repository cards */
 .repo-card {
   background-color: white;
   border-radius: 12px;
@@ -251,7 +238,6 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-/* Repository header */
 .repo-header {
   display: flex;
   justify-content: space-between;
@@ -276,7 +262,6 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Repository description */
 .repo-description {
   font-size: 0.95rem;
   line-height: 1.5;
@@ -285,7 +270,6 @@
   flex-grow: 1;
 }
 
-/* Repository footer */
 .repo-footer {
   display: flex;
   justify-content: space-between;
@@ -308,7 +292,7 @@
 }
 
 .repo-link:hover {
-  background-color: var(--orange, #e26d5c);
+  background-color: #86b8db;
   color: white !important;
 }
 
@@ -323,7 +307,6 @@
   white-space: nowrap;
 }
 
-/* Loading spinner */
 .loading-spinner {
   border: 3px solid rgba(0, 0, 0, 0.1);
   border-top: 3px solid var(--steelblue, #415A77);
@@ -592,7 +575,7 @@ body.dark-mode .github-error p {
   align-items: center;
   padding: 0.5rem 1rem;
   border-radius: 30px;
-  background-color: black;
+  background-color: #86b8db;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -606,8 +589,9 @@ body.dark-mode .github-error p {
 }
 
 .overlay-link:hover {
-  background-color: #f0876d;
+  background-color: var(--steelblue, #415A77);
   transform: translateY(-2px);
+  color: var(--almostwhite, #CAD2C5);
 }
 
 .overlay-link .arrow {
@@ -617,9 +601,8 @@ body.dark-mode .github-error p {
 
 .overlay-link:hover .arrow {
   transform: translateX(3px);
+  color: var(--almostwhite, #CAD2C5); 
 }
-
-/* Dark mode-anpassningar */
 
 body.dark-mode .projects-container{
     background: #141E30;  /* fallback for old browsers */

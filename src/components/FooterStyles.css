@@ -4,11 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 2rem;
+    padding: 1rem;
     width: 100%;
     box-sizing: border-box;
-    /* background: #BE93C5; */
-    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
     background: linear-gradient(to right, #7BC6CC, #BE93C5);
   }
   
@@ -58,13 +56,16 @@
   
   /* Dark mode styles */
   body.dark-mode .footerBox {
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;
+    background: linear-gradient(to right, #243B55, #141E30);
   }
   
   body.dark-mode .footerSocial img {
     filter: brightness(4);
+  }
+
+  body.dark-mode .footerCopyright {
+    color: var(--almostwhite); /* Lighter color for dark mode */
   }
     
   /* Responsive styles */
