@@ -14,45 +14,12 @@
 /* Main content wrapper */
 .landing-content {
   display: flex;
-  flex-direction: column; /* Ändrat från row till column för vertikal layout */
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 3rem;
-  margin: 6rem 0;
+  /* gap: 3rem; */
+  margin-top: 2.5rem;
 }
-
-/* Profile section with image and ring animation */
-.profile-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 400px;
-  max-width: 100%;
-}
-
-.profile-image {
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-  border-radius: 50%;
-  position: relative;
-  z-index: 1;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 .info-section {
   display: flex;
@@ -251,4 +218,24 @@ body.dark-mode .skill-name {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* Add to your existing CSS */
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  animation: bounce 2s infinite;
+}
+
+.scroll-indicator::after {
+  content: '↓';
+  font-size: 4rem;
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-8px); }
+  60% { transform: translateY(-4px); }
 }

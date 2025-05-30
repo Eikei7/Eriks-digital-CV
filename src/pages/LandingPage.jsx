@@ -16,10 +16,9 @@ import {
   mdiLambda
 } from '@mdi/js';
 import Contact from './Contact';
+import ScrollDownArrow from '../components/ScrollDownArrow';
 
 const LandingPage = () => {
-  const contactRef = useRef(null);
-  const isSnapping = useRef(false);
   
   const techSkills = [
     { icon: mdiLanguageHtml5, name: 'HTML' },
@@ -72,9 +71,10 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
+          <div className="scroll-indicator"></div>
         </div>
       </div>
-
+      
       <div>
         <Contact />
       </div>
