@@ -231,7 +231,6 @@ body.dark-mode .skill-name {
 .scroll-indicator::after {
   content: '↓';
   font-size: 4rem;
-  opacity: 0.8;
 }
 
 @keyframes bounce {

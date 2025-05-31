@@ -16,7 +16,6 @@ import {
   mdiLambda
 } from '@mdi/js';
 import Contact from './Contact';
-import ScrollDownArrow from '../components/ScrollDownArrow';
 
 const LandingPage = () => {
   

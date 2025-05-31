@@ -1,5 +1,5 @@
 // Projects.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import DataComponent from '../components/DataComponent';
 import './ProjectStyles.css';
 import OverlayProjectCard from '../components/OverlayProjectCard';
