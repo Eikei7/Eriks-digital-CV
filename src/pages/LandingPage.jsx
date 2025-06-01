@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import './LandingPageStyles.css';
 import Icon from '@mdi/react';
 import { 
@@ -51,7 +50,7 @@ const LandingPage = () => {
               <h1 className="name-heading">Erik Karlsson</h1>
               <h2 className="title-heading">Frontend developer, tech nerd and music lover</h2>
               <div className="about-text">
-                <p>I'm a creative person who loves anything tech and web related. I also have a fond interest of all kinds of music.</p>
+                <p>I'm a creative person who loves anything tech and web related. I'm also interested in all kinds of music.</p>
                 <p>I know my way around the following web technologies and systems:</p>
               </div>
               <div className="skills-grid">
