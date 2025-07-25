@@ -92,7 +92,7 @@ const AboutMe = () => {
       title: "Future Goals",
       image: "img/developer.png",
       content: (
-        <p>Looking forward to graduate in June, I hope to succeed in finding a place to work where I can make use of my skills in web development, 
+        <p>Having graduated in June, I hope to succeed in finding a place to work where I can make use of my skills in web development, 
           contributing to meaningful projects, and perhaps exploring new areas like mobile app development or AI integration.</p>
       )
     }
