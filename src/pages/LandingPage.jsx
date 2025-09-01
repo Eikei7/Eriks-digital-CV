@@ -26,6 +26,17 @@ const LandingPage = () => {
     { icon: mdiNodejs, name: 'Node.js' },
     { icon: mdiAws, name: 'AWS' },
     { icon: mdiLambda, name: 'Lambda' },
+    {
+      svg: (
+        <svg fill="currentColor" viewBox="0 0 48 48" role="img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="96" height="96" >
+          <g id="Ð¡Ð»Ð¾Ð¹_1">
+            <path d="M23.5,30.5v-24c0-1.9-2.3-2.7-3.4-1.2l-16,21c-1.3,1.7-0.1,4.2,2,4.2H23.5z"></path>
+            <path d="M23.5,18.5v24c0,1.9,2.4,2.7,3.6,1.2l16.8-21c1.4-1.7,0.1-4.2-2.1-4.2H23.5z"></path>
+          </g>
+        </svg>
+      ),
+      name: 'Supabase'
+    },
     { icon: mdiMicrosoftVisualStudioCode, name: 'VS Code' },
     { icon: mdiWordpress, name: 'WordPress' },
     { icon: mdiHomeAssistant, name: 'Home Assistant' },
