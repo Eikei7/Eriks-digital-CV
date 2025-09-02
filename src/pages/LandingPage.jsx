@@ -50,6 +50,21 @@ const LandingPage = () => {
     },
     { icon: mdiMicrosoftWindows, name: 'Windows' },
     { icon: mdiPlex , name: 'Plex' },
+    {
+      svg: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          width="48"
+          height="48"
+        >
+          <path d="M12 2C7.03 2 3 4.69 3 8v8c0 3.31 4.03 6 9 6s9-2.69 9-6V8c0-3.31-4.03-6-9-6zm0 17c-4.24 0-7-1.92-7-3V8c0-1.08 2.85-3 7-3s7 1.92 7 3v8c0 1.08-2.76 3-7 3z"/>
+          <text x="12" y="14" textAnchor="middle" fontSize="6" fontFamily="Arial" fill="currentColor">SQL</text>
+        </svg>
+      ),
+      name: 'SQL (currently learning)'
+    }
   ];
 
   return (
@@ -70,9 +85,9 @@ const LandingPage = () => {
                     <div className="skill-icon">
                       {skill.icon ? (
                         <Icon path={skill.icon} size={1.9} />
-                      ) : (
+                      ) : skill.svg ? (
                         skill.svg
-                      )}
+                      ) : null}
                     </div>
                     <span className="skill-name">{skill.name}</span>
                   </div>
