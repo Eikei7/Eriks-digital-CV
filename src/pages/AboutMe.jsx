@@ -53,7 +53,7 @@ const AboutMe = () => {
     {
       year: 2005,
       title: "University studies",
-      image: "img/umea.png",
+      image: "img/umea2.png",
       content: (
         <p>After college I decided that I wanted to become a teacher, so I applied and got accepted into the teacher programme at <a href="https://umu.se" target="_blank">Umeå university</a> in Sweden. My two subjects were Music and English. </p>
       )
