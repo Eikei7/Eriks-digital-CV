@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { fetchData } from '../api';
 import '../pages/ProjectStyles.css';
 
@@ -6,6 +6,8 @@ const DataComponent = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+  const cardRefs = useRef({});
+  const boundingRefs = useRef({});
 
   useEffect(() => {
     const getData = async () => {
@@ -52,30 +54,64 @@ const DataComponent = () => {
       
       <div className="repo-grid">
         {data?.map((repo) => (
-          <div className="repo-card" key={repo.id}>
-            <div className="repo-header">
-              <h3 className="repo-name">{repo.name}</h3>
-              <span className="repo-language" style={{
-                backgroundColor: getLanguageColor(repo.language)
-              }}>
-                {repo.language || 'N/A'}
-              </span>
-            </div>
-            
-            <p className="repo-description">{repo.description || 'No description available'}</p>
-            
-            <div className="repo-footer">
-              <a 
-                href={repo.html_url} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="repo-link"
-              >
-                View on GitHub <span className="github-icon">↗</span>
-              </a>
-              <span className="repo-updated">
-                Updated: {formatDate(repo.updated_at)}
-              </span>
+          <div className="repo-card-wrapper" key={repo.id}>
+            <div 
+              className="repo-card" 
+              ref={(el) => cardRefs.current[repo.id] = el}
+              onMouseLeave={() => {
+                boundingRefs.current[repo.id] = null;
+                const card = cardRefs.current[repo.id];
+                if (card) {
+                  card.style.setProperty("--x-rotation", `0deg`);
+                  card.style.setProperty("--y-rotation", `0deg`);
+                }
+              }}
+              onMouseEnter={(ev) => {
+                boundingRefs.current[repo.id] = ev.currentTarget.getBoundingClientRect();
+              }}
+              onMouseMove={(ev) => {
+                const bounding = boundingRefs.current[repo.id];
+                if (!bounding) return;
+                
+                const x = ev.clientX - bounding.left;
+                const y = ev.clientY - bounding.top;
+                const xPercentage = x / bounding.width;
+                const yPercentage = y / bounding.height;
+                const xRotation = (xPercentage - 0.5) * 20;
+                const yRotation = (0.5 - yPercentage) * 20;
+                
+                ev.currentTarget.style.setProperty("--x-rotation", `${yRotation}deg`);
+                ev.currentTarget.style.setProperty("--y-rotation", `${xRotation}deg`);
+                ev.currentTarget.style.setProperty("--x", `${xPercentage * 100}%`);
+                ev.currentTarget.style.setProperty("--y", `${yPercentage * 100}%`);
+              }}
+            >
+              <div className="repo-header">
+                <h3 className="repo-name">{repo.name}</h3>
+                <span className="repo-language" style={{
+                  backgroundColor: getLanguageColor(repo.language)
+                }}>
+                  {repo.language || 'N/A'}
+                </span>
+              </div>
+              
+              <p className="repo-description">{repo.description || 'No description available'}</p>
+              
+              <div className="repo-footer">
+                <a 
+                  href={repo.html_url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="repo-link"
+                >
+                  View on GitHub <span className="github-icon">↗</span>
+                </a>
+                <span className="repo-updated">
+                  Updated: {formatDate(repo.updated_at)}
+                </span>
+              </div>
+              
+              <div className="card-shine" />
             </div>
           </div>
         ))}

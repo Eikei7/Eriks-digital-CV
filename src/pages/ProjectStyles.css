@@ -223,7 +223,7 @@
   margin-bottom: 3rem;
 }
 
-.repo-card {
+/* .repo-card {
   background-color: white;
   border-radius: 12px;
   padding: 1.5rem;
@@ -231,11 +231,41 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+} */
+
+.repo-card-wrapper {
+  perspective: 800px;
+}
+
+.repo-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: 80%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: transform 0.2s ease-out, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
 }
 
 .repo-card:hover {
-  transform: translateY(-5px);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transform: rotateX(var(--x-rotation)) rotateY(var(--y-rotation)) scale(1.05);
+}
+
+/* .card-shine {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  border-radius: 2px;
+  background: radial-gradient(at var(--x) var(--y), rgba(255, 255, 255, 0.3) 20%, transparent 80%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+} */
+
+.repo-card:hover .card-shine {
+  opacity: 1;
 }
 
 .repo-header {
