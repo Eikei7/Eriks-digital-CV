@@ -23,7 +23,13 @@ const Projects = () => {
       title: "MusiQuiz",
       url: "https://musi-quiz.netlify.app/",
       image: "img/musiquiz.png",
-      description: "A full-stack degree project for school. Challenge a friend to a music quiz! Backend using AWS Lambda and DynamoDB, and frontend with React/Vite."
+      description: "A full-stack degree project for school. Challenge a friend to a music quiz! Backend uses Supabase and frontend made with React/Vite."
+    },
+    {
+      title: "Nintendo Switch Game Library",
+      url: "https://switch-game-library.netlify.app/",
+      image: "img/switch-library.png",
+      description: "A library to keep track of Nintendo Switch games. It allows users to add and remove games, mark them as completed and export/import lists as JSON."
     },
     {
       title: "Solaris",
@@ -35,7 +41,7 @@ const Projects = () => {
       title: "Weather Dashboard",
       url: "https://eriks-weather-dashboard.netlify.app/",
       image: "img/weather.png",
-      description: "A weather dashboard which uses OperWeatherMap API to display weather information."
+      description: "A weather dashboard which uses OpenWeatherMap API to display weather information."
     },
     {
       title: "Beepbox Covers",
