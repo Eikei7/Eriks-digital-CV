@@ -32,6 +32,12 @@ const Projects = () => {
       description: "A library to keep track of Nintendo Switch games. It allows users to add and remove games, mark them as completed and export/import lists as JSON."
     },
     {
+      title: "My Record Collection",
+      url: "https://my-record-collection.netlify.app/",
+      image: "img/my-record-collection.png",
+      description: "A library to keep track of your record collection. It allows users to add and remove records and export/import lists as JSON."
+    },
+    {
       title: "Solaris",
       url: "https://eikei7.github.io/Individuell-Examination-Solaris/",
       image: "img/solaris.png",
