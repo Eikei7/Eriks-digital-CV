@@ -35,7 +35,7 @@ const Projects = () => {
       title: "My Record Collection",
       url: "https://my-record-collection.netlify.app/",
       image: "img/my-record-collection.png",
-      description: "A library to keep track of your record collection. It allows users to add and remove records and export/import lists as JSON."
+      description: "A library to keep track of your record collection. Users can add and remove records and export/import lists as JSON."
     },
     {
       title: "Solaris",

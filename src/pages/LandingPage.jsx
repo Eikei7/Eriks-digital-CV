@@ -63,7 +63,7 @@ const LandingPage = () => {
           <text x="12" y="14" textAnchor="middle" fontSize="6" fontFamily="Arial" fill="currentColor">SQL</text>
         </svg>
       ),
-      name: 'SQL (currently learning)'
+      name: 'SQL'
     }
   ];
 
