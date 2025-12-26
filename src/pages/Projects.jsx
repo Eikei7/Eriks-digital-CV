@@ -54,6 +54,12 @@ const Projects = () => {
       url: "https://erik-beepbox.netlify.app/",
       image: "img/beepbox.png",
       description: "A Beepbox music portfolio made entirely from HTML and CSS styling. It features a widget component for playing both my cover and the original song in Spotify."
+    },
+    {
+      title: "Simple ToDo",
+      url: "https://super-simple-to-do.netlify.app/",
+      image: "img/todo.png",
+      description: "A simple to-do list application to keep track of tasks. Users can add, remove, and mark tasks as completed."
     }
   ];
 
