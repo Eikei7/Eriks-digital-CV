@@ -5,7 +5,6 @@ const AboutMe = () => {
   const [activeYear, setActiveYear] = useState(1985);
   const timelineRef = useRef(null);
   
-  // Data för tidslinje och händelser
   const timelineData = [
     {
       year: 1985,
@@ -28,7 +27,8 @@ const AboutMe = () => {
       title: "First Website",
       image: "img/angelfire.jpeg",
       content: (
-        <p>I've experienced the web since the time of dial-up modems. I was 13 years old when I built my first HTML-only website about myself, complete with animated GIFs and marquee texts, hosted at Angelfire.com. Right around this time (circa 1998 - 2000) I also quickly grew an interest in computers and the technology behind them. On the hardware side for example, I learnt how graphics cards and RAM sticks worked, and practiced swapping them out for newer components on our shared family computer.</p>
+        <p>I've experienced the web since the time of dial-up modems. I was 13 years old when I built my first HTML-only website about myself, complete with animated GIFs and marquee texts, hosted at Angelfire.com. Right around this time (circa 1998 - 2000) I also quickly grew an interest in computers and the technology behind them. On the hardware side for example, I learnt how graphics cards and RAM sticks worked, and practiced swapping them out for newer components on our shared family computer. 
+          This early hands-on approach laid the groundwork for my technical problem-solving skills.</p>
       )
     },
     {
@@ -84,7 +84,10 @@ const AboutMe = () => {
       title: "Frontend studies",
       image: "img/folkuniversitetet.jpg",
       content: (
-        <p>This year I began my two year path at <a href="https://www.folkuniversitetet.se/kontakt/goteborg/" target="_blank">Folkuniversitetet</a> in Göteborg, Sweden to become a Frontend developer.</p>
+        <p>This year I began my two year path at <a href="https://www.folkuniversitetet.se/kontakt/goteborg/" target="_blank">Folkuniversitetet</a> in Göteborg, Sweden to become a Frontend developer.
+        The program provides a comprehensive foundation in modern web development, covering everything from user-centric design (UX/UI) to building robust Fullstack web applications.
+        Through hands-on projects, I developed strong skills in core technologies like HTML, CSS, and JavaScript, while specializing in the React ecosystem. Furthermore, I expanded my technical breadth
+        by exploring server-side development with Node.js to understand the complete lifecycle of a web application.</p>
       )
     },
     {
@@ -94,6 +97,15 @@ const AboutMe = () => {
       content: (
         <p>Having graduated in June, I hope to succeed in finding a place to work where I can make use of my skills in web development, 
           contributing to meaningful projects, and perhaps exploring new areas like mobile app development or AI integration.</p>
+      )
+    },
+    {
+      year: 2026,
+      title: "Temping job as Network Technology Teacher",
+      image: "img/nti.png",
+      content: (
+        <p>After six months of being unsuccessful in finding a permanent position, I was contacted by my old workplace and offered a half-time 
+          position as a teacher specializing in Network Technology, Network Administration, and Network Security. Even if these aren't my main areas of expertise, I decided to take the opportunity and expand my knowledge in these fields.</p>
       )
     }
   ];
@@ -162,27 +174,27 @@ const AboutMe = () => {
               className={`vertical-event ${item.year === activeYear ? 'active' : ''}`}
             >
               <div className="vertical-event-content">
-  <div className="vertical-event-main-flex">
-    <div className="vertical-event-left">
-      <h3 className="vertical-event-title">
-        <span className="vertical-event-year">{item.year}</span>
-        {item.title}
-      </h3>
-      <div className="vertical-event-body">
-        <div className="vertical-event-text">
-          {item.content}
-        </div>
-      </div>
-    </div>
-    {item.image && (
-      <div className="vertical-event-right">
-        <div className="vertical-event-image">
-          <img src={item.image} alt={`${item.title} illustration`} />
-        </div>
-      </div>
-    )}
-  </div>
-</div>
+                <div className="vertical-event-main-flex">
+                  <div className="vertical-event-left">
+                    <h3 className="vertical-event-title">
+                      <span className="vertical-event-year">{item.year}</span>
+                      {item.title}
+                    </h3>
+                    <div className="vertical-event-body">
+                      <div className="vertical-event-text">
+                        {item.content}
+                      </div>
+                    </div>
+                  </div>
+                  {item.image && (
+                    <div className="vertical-event-right">
+                      <div className="vertical-event-image">
+                        <img src={item.image} alt={`${item.title} illustration`} />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           ))}
         </div>

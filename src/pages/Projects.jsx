@@ -1,4 +1,3 @@
-// Projects.jsx
 import { useState } from 'react';
 import DataComponent from '../components/DataComponent';
 import './ProjectStyles.css';
@@ -38,10 +37,10 @@ const Projects = () => {
       description: "A library to keep track of your record collection. Users can add and remove records and export/import lists as JSON."
     },
     {
-      title: "Solaris",
-      url: "https://eikei7.github.io/Individuell-Examination-Solaris/",
-      image: "img/solaris.png",
-      description: "A small school project in Swedish showing the solar system. It uses Fetch API and features searchable planets."
+      title: "LEGO® Collector",
+      url: "https://my-lego-collection.netlify.app/",
+      image: "img/lego-collector.png",
+      description: "A library to keep track of your LEGO® collection. Users can add and remove sets and export/import lists as JSON."
     },
     {
       title: "Weather Dashboard",
